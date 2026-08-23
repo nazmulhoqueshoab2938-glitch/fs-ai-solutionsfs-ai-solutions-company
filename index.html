@@ -64,11 +64,14 @@
                     <a href="tel:01521567789" class="bg-gray-800 hover:bg-gray-700 border border-gray-700 px-4 py-2 rounded-lg text-purple-400 transition flex items-center gap-2">
                         <i class="fas fa-phone"></i> 01521567789
                     </a>
+                    <a href="https://wa.me/8801521567789" target="_blank" class="bg-green-600/20 hover:bg-green-600/40 border border-green-500/50 px-4 py-2 rounded-lg text-green-400 transition flex items-center gap-2">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="mailto:nazmulhoqueshoab2938@gmail.com" class="bg-red-600/20 hover:bg-red-600/40 border border-red-500/50 px-4 py-2 rounded-lg text-red-400 transition flex items-center gap-2">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
                     <a href="https://www.linkedin.com/in/nazmul-hoque-shoab-473a23228/" target="_blank" class="bg-blue-600/20 hover:bg-blue-600/40 border border-blue-500/50 px-4 py-2 rounded-lg text-blue-400 transition flex items-center gap-2">
                         <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                    <a href="https://www.facebook.com/share/1BmhUkLT85/" target="_blank" class="bg-blue-800/20 hover:bg-blue-800/40 border border-blue-600/50 px-4 py-2 rounded-lg text-blue-300 transition flex items-center gap-2">
-                        <i class="fab fa-facebook"></i> Facebook
                     </a>
                 </div>
             </div>
@@ -234,9 +237,15 @@
         <div class="max-w-3xl mx-auto px-6 text-center">
             <h2 class="text-3xl font-bold mb-4">Build Better AI With Better Data</h2>
             <p class="text-gray-400 mb-8 text-sm">Ready to transform your raw data into AI-ready training data? Contact Nazmul Hoque Shoab directly.</p>
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
-                <a href="tel:01521567789" class="bg-purple-600 hover:bg-purple-700 text-white font-bold px-8 py-3.5 rounded-lg transition flex items-center gap-3">
+            <div class="flex flex-wrap justify-center items-center gap-4">
+                <a href="tel:01521567789" class="bg-purple-600 hover:bg-purple-700 text-white font-bold px-6 py-3 rounded-lg transition flex items-center gap-2">
                     <i class="fas fa-phone-alt"></i> Call: 01521567789
+                </a>
+                <a href="https://wa.me/8801521567789" target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold px-6 py-3 rounded-lg transition flex items-center gap-2">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="mailto:nazmulhoqueshoab2938@gmail.com" class="bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-lg transition flex items-center gap-2">
+                    <i class="fas fa-envelope"></i> Email Us
                 </a>
             </div>
         </div>
@@ -248,7 +257,13 @@
         <p>&copy; 2026 FS AI Solutions. Owned by Nazmul Hoque Shoab. All rights reserved.</p>
     </footer>
 
-    <!-- ================= AI CHATBOX WIDGET ================= -->
+    <!-- ================= ADVANCED AI CHATBOX WIDGET ================= -->
+    <!-- Auto Welcome Tooltip Popup -->
+    <div id="welcomeTooltip" class="fixed bottom-24 right-6 bg-gradient-to-r from-purple-800 to-pink-800 text-white text-xs px-4 py-2.5 rounded-xl shadow-2xl z-50 flex items-center gap-3 border border-purple-400/30 animate-bounce hidden">
+        <span>👋 Need help with AI Data Annotation? Chat with us!</span>
+        <button onclick="closeTooltip()" class="text-white/70 hover:text-white"><i class="fas fa-times"></i></button>
+    </div>
+
     <!-- Floating Toggle Button -->
     <button id="chatToggleBtn" onclick="toggleChatBox()" class="fixed bottom-6 right-6 bg-gradient-to-r from-purple-600 to-pink-600 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 z-50 flex items-center justify-center border-2 border-purple-400/50">
         <i id="chatIcon" class="fas fa-comments text-2xl"></i>
@@ -276,6 +291,17 @@
             </button>
         </div>
 
+        <!-- Direct Social Connect Bar -->
+        <div class="bg-gray-800/90 px-4 py-2 border-b border-gray-700/50 flex justify-around text-xs">
+            <a href="https://wa.me/8801521567789" target="_blank" class="text-green-400 hover:text-green-300 font-semibold flex items-center gap-1">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <span class="text-gray-600">|</span>
+            <a href="mailto:nazmulhoqueshoab2938@gmail.com" class="text-red-400 hover:text-red-300 font-semibold flex items-center gap-1">
+                <i class="fas fa-envelope"></i> Email Us
+            </a>
+        </div>
+
         <!-- Chat Body -->
         <div id="chatBody" class="p-4 h-80 overflow-y-auto space-y-3 bg-gray-900/90 text-xs text-gray-200 flex flex-col">
             <div class="flex items-start gap-2 max-w-[85%]">
@@ -291,17 +317,26 @@
             <button onclick="quickSend('What services do you offer?')" class="bg-purple-900/50 hover:bg-purple-800 text-purple-300 px-2.5 py-1 rounded-full whitespace-nowrap border border-purple-500/30">
                 Services?
             </button>
+            <button onclick="quickSend('Get Price Estimate')" class="bg-pink-900/50 hover:bg-pink-800 text-pink-300 px-2.5 py-1 rounded-full whitespace-nowrap border border-pink-500/30">
+                💰 Get Estimate
+            </button>
             <button onclick="quickSend('How to contact Nazmul Hoque Shoab?')" class="bg-purple-900/50 hover:bg-purple-800 text-purple-300 px-2.5 py-1 rounded-full whitespace-nowrap border border-purple-500/30">
                 Contact
             </button>
-            <button onclick="quickSend('Tell me about your QA process.')" class="bg-purple-900/50 hover:bg-purple-800 text-purple-300 px-2.5 py-1 rounded-full whitespace-nowrap border border-purple-500/30">
-                QA Process
-            </button>
         </div>
+
+        <!-- Hidden File Input -->
+        <input type="file" id="fileUpload" class="hidden" onchange="handleFileUpload(event)">
 
         <!-- Input Section -->
         <div class="p-3 bg-gray-800 border-t border-gray-700 flex items-center gap-2">
-            <input id="chatInput" type="text" placeholder="Type your message..." onkeypress="handleKeyPress(event)" class="w-full bg-gray-900 border border-gray-700 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-purple-500">
+            <button onclick="document.getElementById('fileUpload').click()" title="Attach Sample Data" class="text-gray-400 hover:text-purple-400 p-1 transition">
+                <i class="fas fa-paperclip text-sm"></i>
+            </button>
+            <button onclick="simulateVoiceInput()" title="Voice Input" class="text-gray-400 hover:text-pink-400 p-1 transition">
+                <i class="fas fa-microphone text-sm"></i>
+            </button>
+            <input id="chatInput" type="text" placeholder="Type message..." onkeypress="handleKeyPress(event)" class="w-full bg-gray-900 border border-gray-700 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-purple-500">
             <button onclick="sendMessage()" class="bg-purple-600 hover:bg-purple-700 text-white p-2.5 rounded-xl transition flex items-center justify-center">
                 <i class="fas fa-paper-plane text-xs"></i>
             </button>
@@ -310,9 +345,22 @@
 
     <!-- JavaScript Logic -->
     <script>
+        // Auto popup welcome notification after 3 seconds
+        setTimeout(() => {
+            const tooltip = document.getElementById('welcomeTooltip');
+            if (tooltip && document.getElementById('chatBox').classList.contains('hidden')) {
+                tooltip.classList.remove('hidden');
+            }
+        }, 3000);
+
+        function closeTooltip() {
+            document.getElementById('welcomeTooltip').classList.add('hidden');
+        }
+
         function toggleChatBox() {
             const chatBox = document.getElementById('chatBox');
             const chatIcon = document.getElementById('chatIcon');
+            closeTooltip();
             
             if (chatBox.classList.contains('hidden')) {
                 chatBox.classList.remove('hidden');
@@ -338,10 +386,47 @@
             }
         }
 
+        function handleFileUpload(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const chatBody = document.getElementById('chatBody');
+                const fileMsgHTML = `
+                    <div class="flex items-end justify-end gap-2 max-w-[85%] self-end my-1">
+                        <div class="bg-purple-600 text-white p-3 rounded-2xl rounded-tr-none flex items-center gap-2">
+                            <i class="fas fa-file"></i> Attached: <b>${escapeHTML(file.name)}</b>
+                        </div>
+                    </div>
+                `;
+                chatBody.insertAdjacentHTML('beforeend', fileMsgHTML);
+                chatBody.scrollTop = chatBody.scrollHeight;
+
+                setTimeout(() => {
+                    const botReplyHTML = `
+                        <div class="flex items-start gap-2 max-w-[85%] my-1">
+                            <img src="https://github.com/nazmulhoqueshoab2938-glitch/fs-ai-solutionsfs-ai-solutions-company/blob/main/Gemini_Generated_Image_sor4hlsor4hlsor4.jpg?raw=true" class="w-6 h-6 rounded-full mt-1">
+                            <div class="bg-gray-800 p-3 rounded-2xl rounded-tl-none border border-gray-700">
+                                Thank you for sharing <b>${escapeHTML(file.name)}</b>! Our team will review your dataset requirements shortly.
+                            </div>
+                        </div>
+                    `;
+                    chatBody.insertAdjacentHTML('beforeend', botReplyHTML);
+                    chatBody.scrollTop = chatBody.scrollHeight;
+                }, 1000);
+            }
+        }
+
+        function simulateVoiceInput() {
+            const input = document.getElementById('chatInput');
+            input.value = "Listening...";
+            setTimeout(() => {
+                input.value = "I need image annotation services";
+            }, 1500);
+        }
+
         function sendMessage() {
             const input = document.getElementById('chatInput');
             const text = input.value.trim();
-            if (text === '') return;
+            if (text === '' || text === 'Listening...') return;
 
             const chatBody = document.getElementById('chatBody');
 
@@ -375,14 +460,16 @@
 
         function getAutoReply(query) {
             const q = query.toLowerCase();
-            if (q.includes('service') || q.includes('offer') || q.includes('work')) {
-                return "We provide Image, Video, and Text Data Annotation, 2D/3D Bounding Boxes, Segmentation, and Multi-level QA validation services.";
+            if (q.includes('estimate') || q.includes('price') || q.includes('cost')) {
+                return "Our pricing depends on dataset volume and task complexity. Direct WhatsApp us at <a href='https://wa.me/8801521567789' target='_blank' class='text-green-400 underline'>01521567789</a> or email <b>nazmulhoqueshoab2938@gmail.com</b> for an instant quote!";
+            } else if (q.includes('service') || q.includes('offer') || q.includes('work')) {
+                return "We provide Image, Video, and Text Data Annotation, Bounding Boxes, Segmentation, and Multi-level QA validation services.";
             } else if (q.includes('contact') || q.includes('shoab') || q.includes('phone') || q.includes('call')) {
-                return "You can directly contact Founder & Owner Nazmul Hoque Shoab at <b>01521567789</b> or check his <a href='https://www.linkedin.com/in/nazmul-hoque-shoab-473a23228/' target='_blank' class='text-purple-400 underline'>LinkedIn</a>.";
+                return "Contact Nazmul Hoque Shoab directly:<br>• Call/WhatsApp: <b>01521567789</b><br>• Email: <b>nazmulhoqueshoab2938@gmail.com</b><br>• <a href='https://www.linkedin.com/in/nazmul-hoque-shoab-473a23228/' target='_blank' class='text-purple-400 underline'>LinkedIn Profile</a>";
             } else if (q.includes('qa') || q.includes('quality') || q.includes('review')) {
                 return "We follow a multi-tier Quality Assurance process including self-checks, peer reviews, and human-in-the-loop final verification.";
             } else {
-                return "Thank you for reaching out! Please leave your details or call us directly at <b>01521567789</b> to discuss your project.";
+                return "Thank you for reaching out! You can chat with us on <a href='https://wa.me/8801521567789' target='_blank' class='text-green-400 underline'>WhatsApp</a> or email <b>nazmulhoqueshoab2938@gmail.com</b> for custom details.";
             }
         }
 
