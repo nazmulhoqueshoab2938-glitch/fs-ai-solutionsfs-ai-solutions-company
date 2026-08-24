@@ -1,537 +1,1757 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FS AI Solutions - High-Quality Training Data for AI & Machine Learning</title>
+
+    <title>FS AI Solutions | AI Data Annotation & Training Data</title>
+    <meta name="description" content="FS AI Solutions provides high-quality AI data annotation, image annotation, video annotation, text annotation, segmentation, object tracking and quality assurance services.">
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-900 text-white font-sans antialiased">
 
-    <!-- Navigation -->
-    <nav class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto border-b border-gray-800 sticky top-0 bg-gray-900/90 backdrop-blur-md z-40">
-        <a href="#home" class="flex items-center gap-3">
-            <img src="https://github.com/nazmulhoqueshoab2938-glitch/fs-ai-solutionsfs-ai-solutions-company/blob/main/Gemini_Generated_Image_sor4hlsor4hlsor4.jpg?raw=true" alt="FS AI Solutions Logo" class="h-10 w-auto rounded-md">
-            <span class="text-xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 hidden sm:inline">
-                FS AI SOLUTIONS
-            </span>
-        </a>
-        <div class="hidden md:flex space-x-8 text-gray-300 font-medium text-sm">
-            <a href="#home" class="hover:text-purple-400 transition">Home</a>
-            <a href="#about" class="hover:text-purple-400 transition">Founder</a>
-            <a href="#overview" class="hover:text-purple-400 transition">Overview</a>
-            <a href="#services" class="hover:text-purple-400 transition">Services</a>
-            <a href="#pricing" class="hover:text-purple-400 transition">Pricing</a>
-            <a href="#workflow" class="hover:text-purple-400 transition">Workflow</a>
-            <a href="#faq" class="hover:text-purple-400 transition">FAQ</a>
-            <a href="#contact" class="hover:text-purple-400 transition">Contact</a>
-        </div>
-        <a href="#contact" class="bg-gradient-to-r from-purple-500 to-pink-500 hover:opacity-90 px-5 py-2.5 rounded-full font-semibold text-sm transition">
-            Get Started
-        </a>
-    </nav>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Hero Section -->
-    <section id="home" class="text-center py-20 px-4 max-w-5xl mx-auto">
-        <span class="text-purple-400 font-semibold tracking-widest uppercase text-xs bg-purple-900/40 px-3 py-1 rounded-full border border-purple-500/30">
-            Accurate. Scalable. Human-Verified.
-        </span>
-        <h1 class="text-4xl md:text-6xl font-extrabold mt-6 mb-6 leading-tight">
-            How FS AI Solutions Builds High-Quality <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">Training Data for AI & ML</span>
-        </h1>
-        <p class="text-gray-400 text-base md:text-lg mb-10 max-w-3xl mx-auto">
-            Transform raw images, videos, and text into structured, high-quality training datasets through professional data annotation, multi-level quality assurance, and CVAT/Supervisely workflows.
-        </p>
-        <div class="flex flex-wrap justify-center gap-4">
-            <a href="#services" class="bg-purple-600 hover:bg-purple-700 px-8 py-3.5 rounded-lg font-bold transition">Explore Services</a>
-            <a href="#contact" class="border border-purple-500 text-purple-400 hover:bg-purple-500/10 px-8 py-3.5 rounded-lg font-bold transition">Get Started</a>
-        </div>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 
-        <!-- Social Proof Bar -->
-        <div class="mt-12 inline-flex flex-wrap items-center justify-center gap-6 bg-gray-800/80 px-6 py-3 rounded-full border border-gray-700 text-xs text-gray-300">
-            <span class="flex items-center gap-2"><span class="w-2.5 h-2.5 bg-green-500 rounded-full animate-pulse"></span> Active Annotators Online</span>
-            <span class="text-gray-600">|</span>
-            <span><i class="fas fa-shield-alt text-purple-400 mr-1"></i> 99.8% QA Accuracy</span>
-            <span class="text-gray-600">|</span>
-            <span><i class="fas fa-bolt text-yellow-400 mr-1"></i> Instant Workflows</span>
-        </div>
-    </section>
-
-    <!-- Founder Section -->
-    <section id="about" class="py-16 bg-gray-800/40 border-y border-gray-800">
-        <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
-            <div class="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-purple-500/50 shadow-2xl flex-shrink-0">
-                <img src="https://github.com/nazmulhoqueshoab2938-glitch/fs-ai-solutionsfs-ai-solutions-company/blob/main/ChatGPT%20Image%20Aug%2023,%202026,%2002_17_57%20PM.png?raw=true" alt="Nazmul Hoque Shoab" class="w-full h-full object-cover">
-            </div>
-            <div class="text-center md:text-left">
-                <span class="text-purple-400 font-semibold tracking-widest uppercase text-xs">Founder & Owner</span>
-                <h2 class="text-3xl font-bold mt-1 mb-3">Nazmul Hoque Shoab</h2>
-                <p class="text-gray-300 text-base mb-6">
-                    Powering AI development by delivering human-verified, scalable, and high-precision training datasets alongside cutting-edge artificial intelligence solutions.
-                </p>
-                <div class="flex flex-wrap justify-center md:justify-start gap-4 text-sm">
-                    <a href="tel:01521567789" class="bg-gray-800 hover:bg-gray-700 border border-gray-700 px-4 py-2 rounded-lg text-purple-400 transition flex items-center gap-2">
-                        <i class="fas fa-phone"></i> 01521567789
-                    </a>
-                    <a href="https://wa.me/8801521567789" target="_blank" class="bg-green-600/20 hover:bg-green-600/40 border border-green-500/50 px-4 py-2 rounded-lg text-green-400 transition flex items-center gap-2">
-                        <i class="fab fa-whatsapp"></i> WhatsApp
-                    </a>
-                    <a href="mailto:nazmulhoqueshoab2938@gmail.com" class="bg-red-600/20 hover:bg-red-600/40 border border-red-500/50 px-4 py-2 rounded-lg text-red-400 transition flex items-center gap-2">
-                        <i class="fas fa-envelope"></i> Email
-                    </a>
-                    <a href="https://www.linkedin.com/in/nazmul-hoque-shoab-473a23228/" target="_blank" class="bg-blue-600/20 hover:bg-blue-600/40 border border-blue-500/50 px-4 py-2 rounded-lg text-blue-400 transition flex items-center gap-2">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Project Overview -->
-    <section id="overview" class="py-16 max-w-6xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-10">Project Overview</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-sm">
-            <div class="bg-gray-800/80 p-6 rounded-xl border border-gray-700">
-                <p class="text-gray-400 text-xs">Company</p>
-                <p class="text-lg font-bold text-purple-400 mt-1">FS AI Solutions</p>
-            </div>
-            <div class="bg-gray-800/80 p-6 rounded-xl border border-gray-700">
-                <p class="text-gray-400 text-xs">Services</p>
-                <p class="text-lg font-bold text-pink-400 mt-1">AI Data Annotation & QA</p>
-            </div>
-            <div class="bg-gray-800/80 p-6 rounded-xl border border-gray-700">
-                <p class="text-gray-400 text-xs">Data Types</p>
-                <p class="text-lg font-bold text-purple-400 mt-1">Images, Videos & Text</p>
-            </div>
-            <div class="bg-gray-800/80 p-6 rounded-xl border border-gray-700">
-                <p class="text-gray-400 text-xs">Platforms</p>
-                <p class="text-lg font-bold text-pink-400 mt-1">CVAT & Supervisely</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Provided Section -->
-    <section id="services" class="py-20 bg-gray-800/20 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <span class="text-pink-500 font-semibold uppercase tracking-wider text-xs">Comprehensive Capabilities</span>
-                <h2 class="text-3xl md:text-4xl font-bold mt-2">Services Provided</h2>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Image Annotation -->
-                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition">
-                    <div class="text-purple-400 text-3xl mb-4"><i class="fas fa-image"></i></div>
-                    <h3 class="text-xl font-bold mb-3">Image Annotation</h3>
-                    <ul class="text-gray-400 text-sm space-y-2">
-                        <li>• Bounding Box Annotation</li>
-                        <li>• Polygon Annotation</li>
-                        <li>• Semantic & Instance Segmentation</li>
-                        <li>• Object Detection & Classification</li>
-                    </ul>
-                </div>
-
-                <!-- Video & Text Annotation -->
-                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-pink-500 transition">
-                    <div class="text-pink-400 text-3xl mb-4"><i class="fas fa-video"></i></div>
-                    <h3 class="text-xl font-bold mb-3">Video & Text Annotation</h3>
-                    <ul class="text-gray-400 text-sm space-y-2">
-                        <li>• Object Tracking & Frame-by-Frame Labeling</li>
-                        <li>• Activity Recognition & Scene Understanding</li>
-                        <li>• Named Entity Recognition (NER)</li>
-                        <li>• Text Classification & Categorization</li>
-                    </ul>
-                </div>
-
-                <!-- QA & Validation -->
-                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition">
-                    <div class="text-orange-400 text-3xl mb-4"><i class="fas fa-check-double"></i></div>
-                    <h3 class="text-xl font-bold mb-3">Quality Assurance & Review</h3>
-                    <p class="text-gray-400 text-sm mb-3">Multi-level validation protocols covering level-1 self-review, peer QA, and final validation checks.</p>
-                    <span class="text-xs bg-purple-900/60 text-purple-300 px-3 py-1 rounded-full border border-purple-500/40">Human-in-the-loop</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="py-16 max-w-5xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-4">Flexible Project Pricing</h2>
-        <p class="text-gray-400 text-center text-sm mb-12">Scalable options tailored for pilot tests and full enterprise datasets.</p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 text-center">
-                <h3 class="text-xl font-bold text-purple-400">Pilot / Free Trial</h3>
-                <div class="text-3xl font-extrabold my-4">Free Sample</div>
-                <p class="text-gray-400 text-sm mb-6">Test our annotation accuracy with a free trial batch before starting a full agreement.</p>
-                <a href="#contact" class="block w-full bg-purple-600/30 hover:bg-purple-600 text-purple-300 hover:text-white py-3 rounded-lg font-semibold border border-purple-500/50 transition">Request Sample</a>
-            </div>
-            <div class="bg-gray-800 p-8 rounded-2xl border border-purple-500 text-center relative overflow-hidden">
-                <span class="absolute top-3 right-3 bg-pink-600 text-white text-[10px] uppercase font-bold px-3 py-1 rounded-full">Recommended</span>
-                <h3 class="text-xl font-bold text-pink-400">Custom Dataset Batch</h3>
-                <div class="text-3xl font-extrabold my-4">Custom Rate</div>
-                <p class="text-gray-400 text-sm mb-6">Custom pricing based on bounding box count, complexity, NDA terms, and SLA speed.</p>
-                <a href="https://wa.me/8801521567789" target="_blank" class="block w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 rounded-lg font-semibold transition">Get Custom Quote</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- End-to-End Workflow -->
-    <section id="workflow" class="py-20 max-w-6xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-12">Our End-to-End Workflow</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
-            <div class="bg-gray-800/40 p-6 rounded-xl border border-gray-700">
-                <span class="text-purple-400 font-bold">Step 01</span>
-                <h4 class="font-bold text-base mt-2 mb-1">Requirement Analysis</h4>
-                <p class="text-gray-400 text-xs">Understand client AI goals and specific dataset requirements.</p>
-            </div>
-            <div class="bg-gray-800/40 p-6 rounded-xl border border-gray-700">
-                <span class="text-pink-400 font-bold">Step 02</span>
-                <h4 class="font-bold text-base mt-2 mb-1">Guideline & SOP Development</h4>
-                <p class="text-gray-400 text-xs">Define annotation rules, categories, bounding box guidelines, and edge cases.</p>
-            </div>
-            <div class="bg-gray-800/40 p-6 rounded-xl border border-gray-700">
-                <span class="text-purple-400 font-bold">Step 03</span>
-                <h4 class="font-bold text-base mt-2 mb-1">Primary Annotation</h4>
-                <p class="text-gray-400 text-xs">Trained annotators label data on platforms like CVAT & Supervisely.</p>
-            </div>
-            <div class="bg-gray-800/40 p-6 rounded-xl border border-gray-700">
-                <span class="text-pink-400 font-bold">Step 04</span>
-                <h4 class="font-bold text-base mt-2 mb-1">Multi-Level Quality Review</h4>
-                <p class="text-gray-400 text-xs">Self-review, reviewer QA, and final validation before release.</p>
-            </div>
-            <div class="bg-gray-800/40 p-6 rounded-xl border border-gray-700">
-                <span class="text-purple-400 font-bold">Step 05</span>
-                <h4 class="font-bold text-base mt-2 mb-1">Error Correction</h4>
-                <p class="text-gray-400 text-xs">Incomplete or inaccurate annotations are systematically corrected.</p>
-            </div>
-            <div class="bg-gray-800/40 p-6 rounded-xl border border-gray-700">
-                <span class="text-pink-400 font-bold">Step 06</span>
-                <h4 class="font-bold text-base mt-2 mb-1">Dataset Delivery</h4>
-                <p class="text-gray-400 text-xs">Formatted dataset export aligned with client model requirements.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section id="faq" class="py-16 max-w-4xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
-        <div class="space-y-4 text-sm">
-            <div class="bg-gray-800 border border-gray-700 rounded-xl overflow-hidden">
-                <button onclick="toggleFAQ(this)" class="w-full text-left p-5 font-semibold flex justify-between items-center focus:outline-none">
-                    How do you handle client data security and NDAs?
-                    <i class="fas fa-chevron-down text-purple-400"></i>
-                </button>
-                <div class="hidden p-5 pt-0 text-gray-400 border-t border-gray-700/50">
-                    We enforce strict Non-Disclosure Agreements (NDAs), encrypted data handling protocols, and restricted platform access via CVAT/Supervisely to keep your project entirely confidential.
-                </div>
-            </div>
-            <div class="bg-gray-800 border border-gray-700 rounded-xl overflow-hidden">
-                <button onclick="toggleFAQ(this)" class="w-full text-left p-5 font-semibold flex justify-between items-center focus:outline-none">
-                    Can I request a sample before committing to a project?
-                    <i class="fas fa-chevron-down text-purple-400"></i>
-                </button>
-                <div class="hidden p-5 pt-0 text-gray-400 border-t border-gray-700/50">
-                    Yes! You can contact Nazmul Hoque Shoab directly via WhatsApp or Email to get a free trial sample processed for quality validation.
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Key Capabilities Table -->
-    <section id="capabilities" class="py-16 bg-gray-800/30 border-y border-gray-800">
-        <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-8">Key Capabilities Comparison</h2>
-            <div class="overflow-x-auto">
-                <table class="w-full text-left border-collapse text-sm">
-                    <thead>
-                        <tr class="border-b border-gray-700 bg-gray-800">
-                            <th class="p-4">Capability</th>
-                            <th class="p-4 text-center text-purple-400 font-bold">FS AI Solutions</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-gray-800 text-gray-300">
-                        <tr><td class="p-4">Image Annotation</td><td class="p-4 text-center text-green-400">✓</td></tr>
-                        <tr><td class="p-4">Video Annotation & Tracking</td><td class="p-4 text-center text-green-400">✓</td></tr>
-                        <tr><td class="p-4">Text Annotation & NER</td><td class="p-4 text-center text-green-400">✓</td></tr>
-                        <tr><td class="p-4">Bounding Box & Polygon Annotation</td><td class="p-4 text-center text-green-400">✓</td></tr>
-                        <tr><td class="p-4">Semantic & Instance Segmentation</td><td class="p-4 text-center text-green-400">✓</td></tr>
-                        <tr><td class="p-4">CVAT & Supervisely Workflows</td><td class="p-4 text-center text-green-400">✓</td></tr>
-                        <tr><td class="p-4">Multi-Level Quality Assurance</td><td class="p-4 text-center text-green-400">✓</td></tr>
-                        <tr><td class="p-4">Human-in-the-Loop Operations</td><td class="p-4 text-center text-green-400">✓</td></tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-
-    <!-- Supported Industries -->
-    <section class="py-20 max-w-7xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-12">Industries We Support</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
-            <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
-                <i class="fas fa-car text-3xl text-purple-400 mb-3"></i>
-                <h4 class="font-bold">Automotive & Autonomous</h4>
-            </div>
-            <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
-                <i class="fas fa-shopping-cart text-3xl text-pink-400 mb-3"></i>
-                <h4 class="font-bold">Retail & E-commerce</h4>
-            </div>
-            <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
-                <i class="fas fa-heartbeat text-3xl text-purple-400 mb-3"></i>
-                <h4 class="font-bold">Healthcare & Medical AI</h4>
-            </div>
-            <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
-                <i class="fas fa-robot text-3xl text-pink-400 mb-3"></i>
-                <h4 class="font-bold">Robotics & Security</h4>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-gray-800/60 border-t border-gray-800">
-        <div class="max-w-3xl mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-4">Build Better AI With Better Data</h2>
-            <p class="text-gray-400 mb-8 text-sm">Ready to transform your raw data into AI-ready training data? Contact Nazmul Hoque Shoab directly.</p>
-            <div class="flex flex-wrap justify-center items-center gap-4">
-                <a href="tel:01521567789" class="bg-purple-600 hover:bg-purple-700 text-white font-bold px-6 py-3 rounded-lg transition flex items-center gap-2">
-                    <i class="fas fa-phone-alt"></i> Call: 01521567789
-                </a>
-                <a href="https://wa.me/8801521567789" target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold px-6 py-3 rounded-lg transition flex items-center gap-2">
-                    <i class="fab fa-whatsapp"></i> WhatsApp
-                </a>
-                <a href="mailto:nazmulhoqueshoab2938@gmail.com" class="bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-lg transition flex items-center gap-2">
-                    <i class="fas fa-envelope"></i> Email Us
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center py-8 border-t border-gray-800 text-gray-500 text-xs flex flex-col items-center justify-center gap-3">
-        <img src="https://github.com/nazmulhoqueshoab2938-glitch/fs-ai-solutionsfs-ai-solutions-company/blob/main/Gemini_Generated_Image_sor4hlsor4hlsor4.jpg?raw=true" alt="FS AI Solutions Logo" class="h-8 w-auto opacity-80">
-        <p>&copy; 2026 FS AI Solutions. Owned by Nazmul Hoque Shoab. All rights reserved.</p>
-    </footer>
-
-    <!-- ================= ADVANCED AI CHATBOX WIDGET ================= -->
-    <div id="welcomeTooltip" class="fixed bottom-24 right-6 bg-gradient-to-r from-purple-800 to-pink-800 text-white text-xs px-4 py-2.5 rounded-xl shadow-2xl z-50 flex items-center gap-3 border border-purple-400/30 animate-bounce hidden">
-        <span>👋 Need help with AI Data Annotation? Chat with us!</span>
-        <button onclick="closeTooltip()" class="text-white/70 hover:text-white"><i class="fas fa-times"></i></button>
-    </div>
-
-    <button id="chatToggleBtn" onclick="toggleChatBox()" class="fixed bottom-6 right-6 bg-gradient-to-r from-purple-600 to-pink-600 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 z-50 flex items-center justify-center border-2 border-purple-400/50">
-        <i id="chatIcon" class="fas fa-comments text-2xl"></i>
-    </button>
-
-    <div id="chatBox" class="fixed bottom-24 right-6 w-80 sm:w-96 bg-gray-900 border border-purple-500/30 rounded-2xl shadow-2xl z-50 hidden flex-col overflow-hidden transition-all duration-300 font-sans">
-        <div class="bg-gradient-to-r from-purple-800 to-pink-700 p-4 flex items-center justify-between border-b border-purple-500/20">
-            <div class="flex items-center space-x-3">
-                <div class="relative">
-                    <img src="https://github.com/nazmulhoqueshoab2938-glitch/fs-ai-solutionsfs-ai-solutions-company/blob/main/Gemini_Generated_Image_sor4hlsor4hlsor4.jpg?raw=true" alt="FS AI Assistant" class="w-9 h-9 rounded-full object-cover border border-white/20">
-                    <span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-green-500 rounded-full border border-gray-900"></span>
-                </div>
-                <div>
-                    <h4 class="text-white font-bold text-sm tracking-wide">FS AI Assistant</h4>
-                    <p class="text-xs text-purple-200 flex items-center gap-1">
-                        <span class="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></span> Online
-                    </p>
-                </div>
-            </div>
-            <button onclick="toggleChatBox()" class="text-white/80 hover:text-white text-xl focus:outline-none">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-
-        <div class="bg-gray-800/90 px-4 py-2 border-b border-gray-700/50 flex justify-around text-xs">
-            <a href="https://wa.me/8801521567789" target="_blank" class="text-green-400 hover:text-green-300 font-semibold flex items-center gap-1">
-                <i class="fab fa-whatsapp"></i> WhatsApp
-            </a>
-            <span class="text-gray-600">|</span>
-            <a href="mailto:nazmulhoqueshoab2938@gmail.com" class="text-red-400 hover:text-red-300 font-semibold flex items-center gap-1">
-                <i class="fas fa-envelope"></i> Email Us
-            </a>
-        </div>
-
-        <div id="chatBody" class="p-4 h-80 overflow-y-auto space-y-3 bg-gray-900/90 text-xs text-gray-200 flex flex-col">
-            <div class="flex items-start gap-2 max-w-[85%]">
-                <img src="https://github.com/nazmulhoqueshoab2938-glitch/fs-ai-solutionsfs-ai-solutions-company/blob/main/Gemini_Generated_Image_sor4hlsor4hlsor4.jpg?raw=true" class="w-6 h-6 rounded-full mt-1">
-                <div class="bg-gray-800 p-3 rounded-2xl rounded-tl-none border border-gray-700">
-                    Hello! Welcome to <b>FS AI Solutions</b>. How can we help you with your AI Data Annotation project today?
-                </div>
-            </div>
-        </div>
-
-        <div class="p-2 bg-gray-800/60 border-t border-gray-800 flex gap-1.5 overflow-x-auto text-[10px]">
-            <button onclick="quickSend('What services do you offer?')" class="bg-purple-900/50 hover:bg-purple-800 text-purple-300 px-2.5 py-1 rounded-full whitespace-nowrap border border-purple-500/30">
-                Services?
-            </button>
-            <button onclick="quickSend('Get Price Estimate')" class="bg-pink-900/50 hover:bg-pink-800 text-pink-300 px-2.5 py-1 rounded-full whitespace-nowrap border border-pink-500/30">
-                💰 Get Estimate
-            </button>
-            <button onclick="quickSend('How to contact Nazmul Hoque Shoab?')" class="bg-purple-900/50 hover:bg-purple-800 text-purple-300 px-2.5 py-1 rounded-full whitespace-nowrap border border-purple-500/30">
-                Contact
-            </button>
-        </div>
-
-        <input type="file" id="fileUpload" class="hidden" onchange="handleFileUpload(event)">
-
-        <div class="p-3 bg-gray-800 border-t border-gray-700 flex items-center gap-2">
-            <button onclick="document.getElementById('fileUpload').click()" title="Attach Sample Data" class="text-gray-400 hover:text-purple-400 p-1 transition">
-                <i class="fas fa-paperclip text-sm"></i>
-            </button>
-            <button onclick="simulateVoiceInput()" title="Voice Input" class="text-gray-400 hover:text-pink-400 p-1 transition">
-                <i class="fas fa-microphone text-sm"></i>
-            </button>
-            <input id="chatInput" type="text" placeholder="Type message..." onkeypress="handleKeyPress(event)" class="w-full bg-gray-900 border border-gray-700 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-purple-500">
-            <button onclick="sendMessage()" class="bg-purple-600 hover:bg-purple-700 text-white p-2.5 rounded-xl transition flex items-center justify-center">
-                <i class="fas fa-paper-plane text-xs"></i>
-            </button>
-        </div>
-    </div>
-
-    <!-- JavaScript -->
     <script>
-        setTimeout(() => {
-            const tooltip = document.getElementById('welcomeTooltip');
-            if (tooltip && document.getElementById('chatBox').classList.contains('hidden')) {
-                tooltip.classList.remove('hidden');
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif']
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-slow': 'float 9s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s ease-in-out infinite'
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-18px)' }
+                        }
+                    }
+                }
             }
-        }, 3000);
-
-        function closeTooltip() {
-            document.getElementById('welcomeTooltip').classList.add('hidden');
-        }
-
-        function toggleChatBox() {
-            const chatBox = document.getElementById('chatBox');
-            const chatIcon = document.getElementById('chatIcon');
-            closeTooltip();
-            
-            if (chatBox.classList.contains('hidden')) {
-                chatBox.classList.remove('hidden');
-                chatBox.classList.add('flex');
-                chatIcon.classList.remove('fa-comments');
-                chatIcon.classList.add('fa-chevron-down');
-            } else {
-                chatBox.classList.add('hidden');
-                chatBox.classList.remove('flex');
-                chatIcon.classList.remove('fa-chevron-down');
-                chatIcon.classList.add('fa-comments');
-            }
-        }
-
-        function toggleFAQ(element) {
-            const answer = element.nextElementSibling;
-            answer.classList.toggle('hidden');
-        }
-
-        function quickSend(text) {
-            document.getElementById('chatInput').value = text;
-            sendMessage();
-        }
-
-        function handleKeyPress(e) {
-            if (e.key === 'Enter') {
-                sendMessage();
-            }
-        }
-
-        function handleFileUpload(e) {
-            const file = e.target.files[0];
-            if (file) {
-                const chatBody = document.getElementById('chatBody');
-                const fileMsgHTML = `
-                    <div class="flex items-end justify-end gap-2 max-w-[85%] self-end my-1">
-                        <div class="bg-purple-600 text-white p-3 rounded-2xl rounded-tr-none flex items-center gap-2">
-                            <i class="fas fa-file"></i> Attached: <b>${escapeHTML(file.name)}</b>
-                        </div>
-                    </div>
-                `;
-                chatBody.insertAdjacentHTML('beforeend', fileMsgHTML);
-                chatBody.scrollTop = chatBody.scrollHeight;
-
-                setTimeout(() => {
-                    const botReplyHTML = `
-                        <div class="flex items-start gap-2 max-w-[85%] my-1">
-                            <img src="https://github.com/nazmulhoqueshoab2938-glitch/fs-ai-solutionsfs-ai-solutions-company/blob/main/Gemini_Generated_Image_sor4hlsor4hlsor4.jpg?raw=true" class="w-6 h-6 rounded-full mt-1">
-                            <div class="bg-gray-800 p-3 rounded-2xl rounded-tl-none border border-gray-700">
-                                Thank you for sharing <b>${escapeHTML(file.name)}</b>! Our team will review your dataset requirements shortly.
-                            </div>
-                        </div>
-                    `;
-                    chatBody.insertAdjacentHTML('beforeend', botReplyHTML);
-                    chatBody.scrollTop = chatBody.scrollHeight;
-                }, 1000);
-            }
-        }
-
-        function simulateVoiceInput() {
-            const input = document.getElementById('chatInput');
-            input.value = "Listening...";
-            setTimeout(() => {
-                input.value = "I need image annotation services";
-            }, 1500);
-        }
-
-        function sendMessage() {
-            const input = document.getElementById('chatInput');
-            const text = input.value.trim();
-            if (text === '' || text === 'Listening...') return;
-
-            const chatBody = document.getElementById('chatBody');
-
-            const userMsgHTML = `
-                <div class="flex items-end justify-end gap-2 max-w-[85%] self-end my-1">
-                    <div class="bg-purple-600 text-white p-3 rounded-2xl rounded-tr-none">
-                        ${escapeHTML(text)}
-                    </div>
-                </div>
-            `;
-            chatBody.insertAdjacentHTML('beforeend', userMsgHTML);
-            input.value = '';
-            chatBody.scrollTop = chatBody.scrollHeight;
-
-            setTimeout(() => {
-                let botReply = getAutoReply(text);
-                const botMsgHTML = `
-                    <div class="flex items-start gap-2 max-w-[85%] my-1">
-                        <img src="https://github.com/nazmulhoqueshoab2938-glitch/fs-ai-solutionsfs-ai-solutions-company/blob/main/Gemini_Generated_Image_sor4hlsor4hlsor4.jpg?raw=true" class="w-6 h-6 rounded-full mt-1">
-                        <div class="bg-gray-800 p-3 rounded-2xl rounded-tl-none border border-gray-700">
-                            ${botReply}
-                        </div>
-                    </div>
-                `;
-                chatBody.insertAdjacentHTML('beforeend', botMsgHTML);
-                chatBody.scrollTop = chatBody.scrollHeight;
-            }, 800);
-        }
-
-        function getAutoReply(query) {
-            const q = query.toLowerCase();
-            if (q.includes('estimate') || q.includes('price') || q.includes('cost')) {
-                return "Our pricing depends on dataset volume and task complexity. Direct WhatsApp us at <a href='https://wa.me/8801521567789' target='_blank' class='text-green-400 underline'>01521567789</a> or email <b>nazmulhoqueshoab2938@gmail.com</b> for an instant quote!";
-            } else if (q.includes('service') || q.includes('offer') || q.includes('work')) {
-                return "We provide Image, Video, and Text Data Annotation, Bounding Boxes, Segmentation, and Multi-level QA validation services.";
-            } else if (q.includes('contact') || q.includes('shoab') || q.includes('phone') || q.includes('call')) {
-                return "Contact Nazmul Hoque Shoab directly:<br>• Call/WhatsApp: <b>01521567789</b><br>• Email: <b>nazmulhoqueshoab2938@gmail.com</b><br>• <a href='https://www.linkedin.com/in/nazmul-hoque-shoab-473a23228/' target='_blank' class='text-purple-400 underline'>LinkedIn Profile</a>";
-            } else if (q.includes('qa') || q.includes('quality') || q.includes('review')) {
-                return "We follow a multi-tier Quality Assurance process including self-checks, peer reviews, and human-in-the-loop final verification.";
-            } else {
-                return "Thank you for reaching out! You can chat with us on <a href='https://wa.me/8801521567789' target='_blank' class='text-green-400 underline'>WhatsApp</a> or email <b>nazmulhoqueshoab2938@gmail.com</b> for custom details.";
-            }
-        }
-
-        function escapeHTML(str) {
-            return str.replace(/[&<>'"]/g, 
-                tag => ({
-                    '&': '&amp;',
-                    '<': '&lt;',
-                    '>': '&gt;',
-                    "'": '&#39;',
-                    '"': '&quot;'
-                }[tag] || tag)
-            );
         }
     </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background:
+                radial-gradient(circle at 10% 10%, rgba(124,58,237,.13), transparent 28%),
+                radial-gradient(circle at 90% 20%, rgba(236,72,153,.10), transparent 25%),
+                #050507;
+        }
+
+        .glass {
+            background: rgba(255,255,255,.035);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border: 1px solid rgba(255,255,255,.08);
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg,#a78bfa,#ec4899,#f97316);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .gradient-border {
+            position: relative;
+        }
+
+        .gradient-border::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            padding: 1px;
+            background: linear-gradient(135deg,rgba(168,85,247,.7),rgba(236,72,153,.3),transparent);
+            -webkit-mask:
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+
+        .grid-bg {
+            background-image:
+                linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+
+        .glow {
+            box-shadow:
+                0 0 80px rgba(124,58,237,.15),
+                0 0 120px rgba(236,72,153,.08);
+        }
+
+        .service-card {
+            transition: .35s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(168,85,247,.45);
+            box-shadow: 0 20px 70px rgba(0,0,0,.35);
+        }
+
+        .nav-link {
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -7px;
+            left: 0;
+            background: linear-gradient(90deg,#a78bfa,#ec4899);
+            transition: .3s;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .blob {
+            filter: blur(70px);
+            opacity: .25;
+        }
+    </style>
+</head>
+
+<body class="text-white antialiased">
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
+
+<header class="fixed top-0 left-0 right-0 z-50">
+    <nav class="max-w-7xl mx-auto mt-4 px-5">
+        <div class="glass rounded-2xl px-5 py-3 flex items-center justify-between">
+
+            <a href="#home" class="flex items-center gap-3">
+                <img
+                    src="https://github.com/nazmulhoqueshoab2938-glitch/fs-ai-solutionsfs-ai-solutions-company/blob/main/Gemini_Generated_Image_sor4hlsor4hlsor4.jpg?raw=true"
+                    class="w-10 h-10 rounded-xl object-cover"
+                    alt="FS AI Solutions Logo">
+
+                <div>
+                    <div class="font-extrabold tracking-tight">
+                        FS AI <span class="gradient-text">SOLUTIONS</span>
+                    </div>
+                    <div class="text-[9px] text-gray-500 tracking-[.25em]">
+                        AI DATA SOLUTIONS
+                    </div>
+                </div>
+            </a>
+
+            <div class="hidden lg:flex items-center gap-7 text-sm text-gray-300">
+                <a href="#services" class="nav-link hover:text-white transition">Services</a>
+                <a href="#solutions" class="nav-link hover:text-white transition">Solutions</a>
+                <a href="#workflow" class="nav-link hover:text-white transition">Process</a>
+                <a href="#industries" class="nav-link hover:text-white transition">Industries</a>
+                <a href="#about" class="nav-link hover:text-white transition">About</a>
+                <a href="#faq" class="nav-link hover:text-white transition">FAQ</a>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <a
+                    href="#contact"
+                    class="hidden sm:inline-flex bg-white text-black px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-gray-200 transition">
+                    Get Started
+                </a>
+
+                <button
+                    onclick="toggleMobileMenu()"
+                    class="lg:hidden w-10 h-10 glass rounded-xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="hidden mt-2 glass rounded-2xl p-5 lg:hidden">
+            <div class="flex flex-col gap-5 text-gray-300 text-sm">
+                <a href="#services">Services</a>
+                <a href="#solutions">Solutions</a>
+                <a href="#workflow">Process</a>
+                <a href="#industries">Industries</a>
+                <a href="#about">About</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact" class="text-purple-400 font-bold">Get Started →</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section id="home" class="relative min-h-screen overflow-hidden pt-36 pb-20">
+
+    <div class="absolute w-80 h-80 bg-purple-600 rounded-full blob top-32 left-10"></div>
+    <div class="absolute w-80 h-80 bg-pink-600 rounded-full blob top-52 right-10"></div>
+
+    <div class="absolute inset-0 grid-bg opacity-40"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6">
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+            <!-- LEFT -->
+
+            <div>
+
+                <div class="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-xs text-gray-300 mb-7">
+                    <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+                    Human-Powered Data for AI
+                </div>
+
+                <h1 class="text-5xl md:text-6xl xl:text-7xl font-extrabold leading-[1.05] tracking-tight">
+
+                    Better Data.
+
+                    <br>
+
+                    <span class="gradient-text">
+                        Better AI.
+                    </span>
+
+                </h1>
+
+                <p class="mt-7 text-gray-400 text-lg leading-8 max-w-xl">
+
+                    We transform raw images, videos, audio and text into
+                    high-quality, AI-ready training data through expert
+                    annotation, rigorous quality assurance and scalable
+                    human-in-the-loop workflows.
+
+                </p>
+
+                <div class="flex flex-wrap gap-4 mt-9">
+
+                    <a
+                        href="#contact"
+                        class="px-7 py-4 rounded-xl bg-white text-black font-bold hover:scale-[1.02] transition">
+                        Start Your Project
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+
+                    <a
+                        href="#services"
+                        class="px-7 py-4 rounded-xl glass font-semibold hover:bg-white/10 transition">
+                        Explore Services
+                    </a>
+
+                </div>
+
+                <div class="flex flex-wrap items-center gap-6 mt-10 text-xs text-gray-500">
+
+                    <span>
+                        <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                        Human Verified
+                    </span>
+
+                    <span>
+                        <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                        Scalable
+                    </span>
+
+                    <span>
+                        <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                        Quality Focused
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT AI VISUAL -->
+
+            <div class="relative">
+
+                <div class="absolute -inset-10 bg-purple-600/10 blur-3xl"></div>
+
+                <div class="relative glass rounded-[2rem] p-5 glow">
+
+                    <div class="rounded-2xl bg-black/50 overflow-hidden relative">
+
+                        <div class="absolute top-4 left-4 right-4 flex justify-between z-10">
+
+                            <span class="glass px-3 py-2 rounded-lg text-[10px] text-gray-300">
+                                <span class="w-2 h-2 bg-green-400 rounded-full inline-block mr-2"></span>
+                                LIVE ANNOTATION
+                            </span>
+
+                            <span class="glass px-3 py-2 rounded-lg text-[10px] text-purple-300">
+                                COMPUTER VISION
+                            </span>
+
+                        </div>
+
+                        <div class="h-[430px] relative flex items-center justify-center">
+
+                            <div class="absolute w-72 h-72 rounded-full border border-purple-500/20 animate-pulse-slow"></div>
+                            <div class="absolute w-52 h-52 rounded-full border border-pink-500/20"></div>
+
+                            <div class="relative w-64 h-72 rounded-3xl bg-gradient-to-br from-purple-900/70 to-pink-900/30 border border-purple-400/30 flex items-center justify-center animate-float">
+
+                                <div class="text-center">
+
+                                    <i class="fas fa-brain text-6xl text-purple-300 mb-5"></i>
+
+                                    <div class="text-sm font-bold">
+                                        AI TRAINING DATA
+                                    </div>
+
+                                    <div class="text-xs text-gray-500 mt-2">
+                                        Structured • Verified • Ready
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Floating labels -->
+
+                            <div class="absolute top-28 left-8 glass px-4 py-3 rounded-xl text-xs animate-float">
+                                <i class="fas fa-vector-square text-purple-400 mr-2"></i>
+                                Bounding Box
+                            </div>
+
+                            <div class="absolute bottom-28 right-8 glass px-4 py-3 rounded-xl text-xs animate-float">
+                                <i class="fas fa-layer-group text-pink-400 mr-2"></i>
+                                Segmentation
+                            </div>
+
+                        </div>
+
+                        <div class="border-t border-white/5 grid grid-cols-3">
+
+                            <div class="p-4 text-center">
+                                <div class="font-bold">Image</div>
+                                <div class="text-[10px] text-gray-500 mt-1">Annotation</div>
+                            </div>
+
+                            <div class="p-4 text-center border-x border-white/5">
+                                <div class="font-bold">Video</div>
+                                <div class="text-[10px] text-gray-500 mt-1">Tracking</div>
+                            </div>
+
+                            <div class="p-4 text-center">
+                                <div class="font-bold">Text</div>
+                                <div class="text-[10px] text-gray-500 mt-1">NLP</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- =========================================================
+     TRUST BAR
+========================================================= -->
+
+<section class="border-y border-white/5 bg-white/[.015]">
+
+    <div class="max-w-7xl mx-auto px-6 py-8">
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+
+            <div>
+                <div class="text-3xl font-extrabold gradient-text">2+</div>
+                <div class="text-xs text-gray-500 mt-2">Years Experience</div>
+            </div>
+
+            <div>
+                <div class="text-3xl font-extrabold gradient-text">99%+</div>
+                <div class="text-xs text-gray-500 mt-2">Quality Focus</div>
+            </div>
+
+            <div>
+                <div class="text-3xl font-extrabold gradient-text">24/7</div>
+                <div class="text-xs text-gray-500 mt-2">Project Scalability</div>
+            </div>
+
+            <div>
+                <div class="text-3xl font-extrabold gradient-text">2</div>
+                <div class="text-xs text-gray-500 mt-2">Core Annotation Platforms</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     WHAT WE DO
+========================================================= -->
+
+<section id="solutions" class="py-28">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="max-w-3xl mb-16">
+
+            <span class="text-purple-400 text-xs font-bold tracking-[.25em] uppercase">
+                What We Do
+            </span>
+
+            <h2 class="text-4xl md:text-5xl font-extrabold mt-4">
+                Turning raw data into
+                <span class="gradient-text">AI-ready intelligence.</span>
+            </h2>
+
+            <p class="text-gray-400 mt-6 leading-7">
+                From computer vision to natural language processing,
+                FS AI Solutions helps AI teams create structured,
+                reliable and high-quality datasets.
+            </p>
+
+        </div>
+
+
+        <div class="grid md:grid-cols-3 gap-6">
+
+            <div class="glass rounded-3xl p-8 service-card gradient-border">
+
+                <div class="w-14 h-14 rounded-2xl bg-purple-500/10 flex items-center justify-center text-purple-400 text-2xl">
+                    <i class="fas fa-image"></i>
+                </div>
+
+                <h3 class="text-xl font-bold mt-7">
+                    Computer Vision
+                </h3>
+
+                <p class="text-gray-500 text-sm leading-6 mt-3">
+                    Build visual intelligence with accurately labeled
+                    images and videos.
+                </p>
+
+                <div class="flex flex-wrap gap-2 mt-6">
+                    <span class="tag">Bounding Boxes</span>
+                    <span class="tag">Polygons</span>
+                    <span class="tag">Segmentation</span>
+                </div>
+
+            </div>
+
+
+            <div class="glass rounded-3xl p-8 service-card gradient-border">
+
+                <div class="w-14 h-14 rounded-2xl bg-pink-500/10 flex items-center justify-center text-pink-400 text-2xl">
+                    <i class="fas fa-language"></i>
+                </div>
+
+                <h3 class="text-xl font-bold mt-7">
+                    NLP & Text Data
+                </h3>
+
+                <p class="text-gray-500 text-sm leading-6 mt-3">
+                    Structured language datasets for NLP, conversational
+                    AI and machine learning systems.
+                </p>
+
+                <div class="flex flex-wrap gap-2 mt-6">
+                    <span class="tag">NER</span>
+                    <span class="tag">Classification</span>
+                    <span class="tag">Sentiment</span>
+                </div>
+
+            </div>
+
+
+            <div class="glass rounded-3xl p-8 service-card gradient-border">
+
+                <div class="w-14 h-14 rounded-2xl bg-orange-500/10 flex items-center justify-center text-orange-400 text-2xl">
+                    <i class="fas fa-video"></i>
+                </div>
+
+                <h3 class="text-xl font-bold mt-7">
+                    Video & Tracking
+                </h3>
+
+                <p class="text-gray-500 text-sm leading-6 mt-3">
+                    Frame-level annotation and object tracking for
+                    advanced computer vision applications.
+                </p>
+
+                <div class="flex flex-wrap gap-2 mt-6">
+                    <span class="tag">Tracking</span>
+                    <span class="tag">Frame Labeling</span>
+                    <span class="tag">Activity</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SERVICES
+========================================================= -->
+
+<section id="services" class="py-28 bg-white/[.015] border-y border-white/5">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center max-w-3xl mx-auto">
+
+            <span class="text-pink-400 text-xs font-bold tracking-[.25em] uppercase">
+                Our Capabilities
+            </span>
+
+            <h2 class="text-4xl md:text-5xl font-extrabold mt-4">
+                Complete AI Data
+                <span class="gradient-text">Annotation Services</span>
+            </h2>
+
+        </div>
+
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-16">
+
+            <!-- Card -->
+
+            <div class="glass p-7 rounded-2xl service-card">
+                <i class="fas fa-vector-square text-purple-400 text-2xl"></i>
+                <h3 class="font-bold text-lg mt-5">Bounding Box</h3>
+                <p class="text-gray-500 text-sm mt-2">
+                    Precise object detection annotation for computer vision models.
+                </p>
+            </div>
+
+
+            <div class="glass p-7 rounded-2xl service-card">
+                <i class="fas fa-draw-polygon text-pink-400 text-2xl"></i>
+                <h3 class="font-bold text-lg mt-5">Polygon Annotation</h3>
+                <p class="text-gray-500 text-sm mt-2">
+                    Pixel-level object outlining for complex shapes and scenes.
+                </p>
+            </div>
+
+
+            <div class="glass p-7 rounded-2xl service-card">
+                <i class="fas fa-layer-group text-purple-400 text-2xl"></i>
+                <h3 class="font-bold text-lg mt-5">Segmentation</h3>
+                <p class="text-gray-500 text-sm mt-2">
+                    Semantic and instance segmentation for advanced AI models.
+                </p>
+            </div>
+
+
+            <div class="glass p-7 rounded-2xl service-card">
+                <i class="fas fa-route text-pink-400 text-2xl"></i>
+                <h3 class="font-bold text-lg mt-5">Object Tracking</h3>
+                <p class="text-gray-500 text-sm mt-2">
+                    Frame-by-frame tracking for video and autonomous systems.
+                </p>
+            </div>
+
+
+            <div class="glass p-7 rounded-2xl service-card">
+                <i class="fas fa-file-alt text-purple-400 text-2xl"></i>
+                <h3 class="font-bold text-lg mt-5">Text Annotation</h3>
+                <p class="text-gray-500 text-sm mt-2">
+                    NER, classification, categorization and NLP dataset preparation.
+                </p>
+            </div>
+
+
+            <div class="glass p-7 rounded-2xl service-card">
+                <i class="fas fa-check-double text-pink-400 text-2xl"></i>
+                <h3 class="font-bold text-lg mt-5">Quality Assurance</h3>
+                <p class="text-gray-500 text-sm mt-2">
+                    Multi-level human review and validation for reliable datasets.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     WORKFLOW
+========================================================= -->
+
+<section id="workflow" class="py-28">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+            <div>
+
+                <span class="text-purple-400 text-xs font-bold tracking-[.25em] uppercase">
+                    Our Process
+                </span>
+
+                <h2 class="text-4xl md:text-5xl font-extrabold mt-4">
+                    From raw data to
+                    <span class="gradient-text">production-ready datasets.</span>
+                </h2>
+
+                <p class="text-gray-500 mt-6 leading-7">
+                    Our structured workflow keeps annotation consistent,
+                    scalable and aligned with your machine learning objectives.
+                </p>
+
+                <a href="#contact"
+                   class="inline-flex mt-8 px-6 py-3 rounded-xl bg-white text-black font-bold">
+                    Discuss Your Dataset
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+
+            </div>
+
+
+            <div class="space-y-4">
+
+                <div class="glass rounded-2xl p-6 flex gap-5">
+
+                    <div class="text-purple-400 font-extrabold text-xl">
+                        01
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold">Requirement Analysis</h3>
+                        <p class="text-gray-500 text-sm mt-1">
+                            Understand dataset goals, classes and annotation requirements.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="glass rounded-2xl p-6 flex gap-5">
+
+                    <div class="text-pink-400 font-extrabold text-xl">
+                        02
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold">Guideline & SOP</h3>
+                        <p class="text-gray-500 text-sm mt-1">
+                            Build detailed annotation rules and edge-case guidelines.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="glass rounded-2xl p-6 flex gap-5">
+
+                    <div class="text-purple-400 font-extrabold text-xl">
+                        03
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold">Annotation</h3>
+                        <p class="text-gray-500 text-sm mt-1">
+                            Trained annotators label datasets using professional tools.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="glass rounded-2xl p-6 flex gap-5">
+
+                    <div class="text-pink-400 font-extrabold text-xl">
+                        04
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold">Quality Review</h3>
+                        <p class="text-gray-500 text-sm mt-1">
+                            Self-review, peer QA and final validation.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="glass rounded-2xl p-6 flex gap-5">
+
+                    <div class="text-purple-400 font-extrabold text-xl">
+                        05
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold">Correction & Validation</h3>
+                        <p class="text-gray-500 text-sm mt-1">
+                            Errors are identified, corrected and revalidated.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="glass rounded-2xl p-6 flex gap-5">
+
+                    <div class="text-pink-400 font-extrabold text-xl">
+                        06
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold">Dataset Delivery</h3>
+                        <p class="text-gray-500 text-sm mt-1">
+                            Final AI-ready dataset delivered in the required format.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     INDUSTRIES
+========================================================= -->
+
+<section id="industries" class="py-28 bg-white/[.015] border-y border-white/5">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center">
+
+            <span class="text-purple-400 text-xs font-bold tracking-[.25em] uppercase">
+                Industries
+            </span>
+
+            <h2 class="text-4xl md:text-5xl font-extrabold mt-4">
+                Data for every
+                <span class="gradient-text">AI industry.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-5 mt-16">
+
+            <div class="glass rounded-2xl p-7 text-center service-card">
+                <i class="fas fa-car text-3xl text-purple-400"></i>
+                <h3 class="font-bold mt-5">Automotive</h3>
+                <p class="text-xs text-gray-500 mt-2">
+                    Autonomous driving & vision
+                </p>
+            </div>
+
+
+            <div class="glass rounded-2xl p-7 text-center service-card">
+                <i class="fas fa-robot text-3xl text-pink-400"></i>
+                <h3 class="font-bold mt-5">Robotics</h3>
+                <p class="text-xs text-gray-500 mt-2">
+                    Object detection & tracking
+                </p>
+            </div>
+
+
+            <div class="glass rounded-2xl p-7 text-center service-card">
+                <i class="fas fa-shopping-bag text-3xl text-purple-400"></i>
+                <h3 class="font-bold mt-5">Retail</h3>
+                <p class="text-xs text-gray-500 mt-2">
+                    Product recognition & analytics
+                </p>
+            </div>
+
+
+            <div class="glass rounded-2xl p-7 text-center service-card">
+                <i class="fas fa-heartbeat text-3xl text-pink-400"></i>
+                <h3 class="font-bold mt-5">Healthcare</h3>
+                <p class="text-xs text-gray-500 mt-2">
+                    Medical AI datasets
+                </p>
+            </div>
+
+
+            <div class="glass rounded-2xl p-7 text-center service-card">
+                <i class="fas fa-shield-alt text-3xl text-purple-400"></i>
+                <h3 class="font-bold mt-5">Security</h3>
+                <p class="text-xs text-gray-500 mt-2">
+                    Surveillance & detection
+                </p>
+            </div>
+
+
+            <div class="glass rounded-2xl p-7 text-center service-card">
+                <i class="fas fa-store text-3xl text-pink-400"></i>
+                <h3 class="font-bold mt-5">E-commerce</h3>
+                <p class="text-xs text-gray-500 mt-2">
+                    Product & image datasets
+                </p>
+            </div>
+
+
+            <div class="glass rounded-2xl p-7 text-center service-card">
+                <i class="fas fa-comments text-3xl text-purple-400"></i>
+                <h3 class="font-bold mt-5">Conversational AI</h3>
+                <p class="text-xs text-gray-500 mt-2">
+                    NLP & text datasets
+                </p>
+            </div>
+
+
+            <div class="glass rounded-2xl p-7 text-center service-card">
+                <i class="fas fa-satellite text-3xl text-pink-400"></i>
+                <h3 class="font-bold mt-5">Geospatial AI</h3>
+                <p class="text-xs text-gray-500 mt-2">
+                    Mapping & satellite data
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     WHY FS AI SOLUTIONS
+========================================================= -->
+
+<section class="py-28">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+            <div>
+
+                <span class="text-pink-400 text-xs font-bold tracking-[.25em] uppercase">
+                    Why FS AI Solutions
+                </span>
+
+                <h2 class="text-4xl md:text-5xl font-extrabold mt-4">
+                    Built around
+                    <span class="gradient-text">quality.</span>
+                </h2>
+
+                <p class="text-gray-500 mt-6 leading-7">
+                    AI models are only as good as the data behind them.
+                    Our workflows focus on accuracy, consistency and
+                    scalable human verification.
+                </p>
+
+            </div>
+
+
+            <div class="grid sm:grid-cols-2 gap-5">
+
+                <div class="glass p-7 rounded-2xl">
+                    <i class="fas fa-users text-purple-400 text-2xl"></i>
+                    <h3 class="font-bold mt-5">Human-in-the-Loop</h3>
+                    <p class="text-gray-500 text-sm mt-2">
+                        Human expertise combined with structured workflows.
+                    </p>
+                </div>
+
+
+                <div class="glass p-7 rounded-2xl">
+                    <i class="fas fa-expand-arrows-alt text-pink-400 text-2xl"></i>
+                    <h3 class="font-bold mt-5">Scalable Teams</h3>
+                    <p class="text-gray-500 text-sm mt-2">
+                        Flexible capacity for growing annotation projects.
+                    </p>
+                </div>
+
+
+                <div class="glass p-7 rounded-2xl">
+                    <i class="fas fa-check-circle text-purple-400 text-2xl"></i>
+                    <h3 class="font-bold mt-5">Multi-Level QA</h3>
+                    <p class="text-gray-500 text-sm mt-2">
+                        Multiple validation layers before dataset delivery.
+                    </p>
+                </div>
+
+
+                <div class="glass p-7 rounded-2xl">
+                    <i class="fas fa-cogs text-pink-400 text-2xl"></i>
+                    <h3 class="font-bold mt-5">Flexible Workflow</h3>
+                    <p class="text-gray-500 text-sm mt-2">
+                        Workflows designed around your project requirements.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     TECHNOLOGY
+========================================================= -->
+
+<section class="py-24 bg-white/[.015] border-y border-white/5">
+
+    <div class="max-w-5xl mx-auto px-6 text-center">
+
+        <span class="text-purple-400 text-xs font-bold tracking-[.25em] uppercase">
+            Technology
+        </span>
+
+        <h2 class="text-3xl md:text-4xl font-extrabold mt-4">
+            Professional annotation
+            <span class="gradient-text">workflows.</span>
+        </h2>
+
+        <p class="text-gray-500 mt-5 max-w-2xl mx-auto">
+            We work with professional annotation environments to
+            organize, label, review and manage AI training datasets.
+        </p>
+
+
+        <div class="flex flex-wrap justify-center gap-5 mt-12">
+
+            <div class="glass rounded-2xl px-8 py-6">
+                <div class="text-2xl font-extrabold">CVAT</div>
+                <div class="text-xs text-gray-500 mt-1">
+                    Computer Vision Annotation Tool
+                </div>
+            </div>
+
+            <div class="glass rounded-2xl px-8 py-6">
+                <div class="text-2xl font-extrabold">Supervisely</div>
+                <div class="text-xs text-gray-500 mt-1">
+                    AI Data Platform
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CASE STUDY
+========================================================= -->
+
+<section class="py-28">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="glass rounded-[2rem] overflow-hidden gradient-border">
+
+            <div class="grid lg:grid-cols-2">
+
+                <div class="p-10 md:p-14">
+
+                    <span class="text-purple-400 text-xs font-bold tracking-[.25em] uppercase">
+                        Featured Capability
+                    </span>
+
+                    <h2 class="text-4xl font-extrabold mt-5">
+                        High-quality annotation
+                        <span class="gradient-text">
+                            at scale.
+                        </span>
+                    </h2>
+
+                    <p class="text-gray-500 leading-7 mt-6">
+                        From bounding boxes and polygon segmentation
+                        to video tracking and text annotation,
+                        our workflows are designed to create
+                        consistent training data for modern AI systems.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-5 mt-8">
+
+                        <div>
+                            <div class="text-2xl font-bold">Image</div>
+                            <div class="text-xs text-gray-500">Annotation</div>
+                        </div>
+
+                        <div>
+                            <div class="text-2xl font-bold">Video</div>
+                            <div class="text-xs text-gray-500">Tracking</div>
+                        </div>
+
+                        <div>
+                            <div class="text-2xl font-bold">Text</div>
+                            <div class="text-xs text-gray-500">NLP</div>
+                        </div>
+
+                        <div>
+                            <div class="text-2xl font-bold">QA</div>
+                            <div class="text-xs text-gray-500">Validation</div>
+                        </div>
+
+                    </div>
+
+                    <a href="#contact"
+                       class="inline-flex mt-9 bg-white text-black px-6 py-3 rounded-xl font-bold">
+                        Start a Conversation
+                    </a>
+
+                </div>
+
+
+                <div class="min-h-[450px] bg-gradient-to-br from-purple-900/30 via-black to-pink-900/20 flex items-center justify-center p-10">
+
+                    <div class="relative w-full max-w-md">
+
+                        <div class="glass rounded-3xl p-6 animate-float">
+
+                            <div class="flex items-center justify-between mb-6">
+
+                                <span class="text-xs text-gray-400">
+                                    DATASET QUALITY
+                                </span>
+
+                                <span class="text-green-400 text-xs">
+                                    ● VERIFIED
+                                </span>
+
+                            </div>
+
+                            <div class="space-y-5">
+
+                                <div>
+                                    <div class="flex justify-between text-xs mb-2">
+                                        <span>Annotation Accuracy</span>
+                                        <span>99%+</span>
+                                    </div>
+
+                                    <div class="h-2 bg-white/5 rounded-full">
+                                        <div class="h-full w-[96%] bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></div>
+                                    </div>
+                                </div>
+
+
+                                <div>
+                                    <div class="flex justify-between text-xs mb-2">
+                                        <span>QA Validation</span>
+                                        <span>Verified</span>
+                                    </div>
+
+                                    <div class="h-2 bg-white/5 rounded-full">
+                                        <div class="h-full w-[92%] bg-gradient-to-r from-pink-500 to-orange-400 rounded-full"></div>
+                                    </div>
+                                </div>
+
+
+                                <div>
+                                    <div class="flex justify-between text-xs mb-2">
+                                        <span>Dataset Readiness</span>
+                                        <span>Ready</span>
+                                    </div>
+
+                                    <div class="h-2 bg-white/5 rounded-full">
+                                        <div class="h-full w-[98%] bg-gradient-to-r from-purple-500 to-blue-500 rounded-full"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOUNDER
+========================================================= -->
+
+<section id="about" class="py-28 bg-white/[.015] border-y border-white/5">
+
+    <div class="max-w-5xl mx-auto px-6">
+
+        <div class="glass rounded-[2rem] p-8 md:p-12">
+
+            <div class="flex flex-col md:flex-row items-center gap-10">
+
+                <img
+                    src="https://github.com/nazmulhoqueshoab2938-glitch/fs-ai-solutionsfs-ai-solutions-company/blob/main/ChatGPT%20Image%20Aug%2023,%202026,%2002_17_57%20PM.png?raw=true"
+                    alt="Nazmul Hoque Shoab"
+                    class="w-40 h-40 md:w-48 md:h-48 object-cover rounded-full border-2 border-purple-500/40">
+
+                <div class="text-center md:text-left">
+
+                    <span class="text-purple-400 text-xs font-bold tracking-[.2em] uppercase">
+                        Founder & Owner
+                    </span>
+
+                    <h2 class="text-3xl font-extrabold mt-2">
+                        Nazmul Hoque Shoab
+                    </h2>
+
+                    <p class="text-gray-500 leading-7 mt-4">
+                        Building FS AI Solutions with a focus on
+                        high-quality AI training data, professional
+                        annotation workflows and scalable human
+                        intelligence for machine learning.
+                    </p>
+
+                    <div class="flex flex-wrap justify-center md:justify-start gap-3 mt-6">
+
+                        <a href="https://www.linkedin.com/in/nazmul-hoque-shoab-473a23228/"
+                           target="_blank"
+                           class="glass px-4 py-2 rounded-lg text-sm hover:text-blue-400">
+                            <i class="fab fa-linkedin mr-2"></i>
+                            LinkedIn
+                        </a>
+
+                        <a href="mailto:nazmulhoqueshoab2938@gmail.com"
+                           class="glass px-4 py-2 rounded-lg text-sm hover:text-red-400">
+                            <i class="fas fa-envelope mr-2"></i>
+                            Email
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FAQ
+========================================================= -->
+
+<section id="faq" class="py-28">
+
+    <div class="max-w-4xl mx-auto px-6">
+
+        <div class="text-center mb-14">
+
+            <span class="text-pink-400 text-xs font-bold tracking-[.25em] uppercase">
+                FAQ
+            </span>
+
+            <h2 class="text-4xl font-extrabold mt-4">
+                Frequently Asked
+                <span class="gradient-text">Questions</span>
+            </h2>
+
+        </div>
+
+
+        <div class="space-y-4">
+
+            <div class="glass rounded-2xl overflow-hidden">
+
+                <button onclick="toggleFAQ(this)"
+                    class="w-full p-6 flex justify-between items-center text-left font-semibold">
+
+                    Can you provide a sample before starting?
+
+                    <i class="fas fa-chevron-down text-purple-400"></i>
+
+                </button>
+
+                <div class="faq-answer hidden px-6 pb-6 text-sm text-gray-500 leading-6">
+
+                    Yes. We can discuss a pilot or sample annotation
+                    before moving into a larger project.
+
+                </div>
+
+            </div>
+
+
+            <div class="glass rounded-2xl overflow-hidden">
+
+                <button onclick="toggleFAQ(this)"
+                    class="w-full p-6 flex justify-between items-center text-left font-semibold">
+
+                    What type of data can you annotate?
+
+                    <i class="fas fa-chevron-down text-purple-400"></i>
+
+                </button>
+
+                <div class="faq-answer hidden px-6 pb-6 text-sm text-gray-500 leading-6">
+
+                    We support images, videos and text datasets,
+                    including bounding boxes, polygons, segmentation,
+                    tracking, classification and NLP annotation.
+
+                </div>
+
+            </div>
+
+
+            <div class="glass rounded-2xl overflow-hidden">
+
+                <button onclick="toggleFAQ(this)"
+                    class="w-full p-6 flex justify-between items-center text-left font-semibold">
+
+                    Which annotation platforms do you use?
+
+                    <i class="fas fa-chevron-down text-purple-400"></i>
+
+                </button>
+
+                <div class="faq-answer hidden px-6 pb-6 text-sm text-gray-500 leading-6">
+
+                    Our current workflows include CVAT and Supervisely,
+                    depending on project requirements.
+
+                </div>
+
+            </div>
+
+
+            <div class="glass rounded-2xl overflow-hidden">
+
+                <button onclick="toggleFAQ(this)"
+                    class="w-full p-6 flex justify-between items-center text-left font-semibold">
+
+                    How is pricing calculated?
+
+                    <i class="fas fa-chevron-down text-purple-400"></i>
+
+                </button>
+
+                <div class="faq-answer hidden px-6 pb-6 text-sm text-gray-500 leading-6">
+
+                    Pricing depends on data volume, annotation type,
+                    complexity, QA requirements and project timeline.
+                    Contact us for a custom quote.
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FINAL CTA
+========================================================= -->
+
+<section id="contact" class="py-28">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+        <div class="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-purple-900/60 via-purple-950/40 to-pink-900/50 border border-purple-500/20 p-10 md:p-16 text-center">
+
+            <div class="absolute w-64 h-64 bg-purple-500 rounded-full blur-[100px] opacity-20 -top-20 -left-20"></div>
+
+            <div class="relative">
+
+                <span class="text-purple-200 text-xs font-bold tracking-[.25em] uppercase">
+                    Start Your AI Project
+                </span>
+
+                <h2 class="text-4xl md:text-6xl font-extrabold mt-5">
+                    Build Better AI
+                    <br>
+                    <span class="text-white/80">With Better Data.</span>
+                </h2>
+
+                <p class="text-purple-100/60 max-w-2xl mx-auto mt-6">
+                    Tell us about your dataset, annotation requirements
+                    and project goals. Let's build a workflow that works
+                    for your AI model.
+                </p>
+
+                <div class="flex flex-wrap justify-center gap-4 mt-9">
+
+                    <a href="https://wa.me/8801521567789"
+                       target="_blank"
+                       class="bg-green-500 hover:bg-green-400 text-black px-7 py-4 rounded-xl font-bold transition">
+
+                        <i class="fab fa-whatsapp mr-2"></i>
+                        WhatsApp Us
+
+                    </a>
+
+                    <a href="mailto:nazmulhoqueshoab2938@gmail.com"
+                       class="bg-white text-black hover:bg-gray-200 px-7 py-4 rounded-xl font-bold transition">
+
+                        <i class="fas fa-envelope mr-2"></i>
+                        Email Us
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="border-t border-white/5 py-12">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid md:grid-cols-4 gap-10">
+
+            <div class="md:col-span-2">
+
+                <div class="flex items-center gap-3">
+
+                    <img
+                        src="https://github.com/nazmulhoqueshoab2938-glitch/fs-ai-solutionsfs-ai-solutions-company/blob/main/Gemini_Generated_Image_sor4hlsor4hlsor4.jpg?raw=true"
+                        class="w-10 h-10 rounded-xl"
+                        alt="FS AI Solutions">
+
+                    <div class="font-extrabold">
+                        FS AI <span class="gradient-text">SOLUTIONS</span>
+                    </div>
+
+                </div>
+
+                <p class="text-gray-600 text-sm leading-6 mt-5 max-w-md">
+                    Human-powered AI data annotation and training
+                    data solutions for the next generation of
+                    artificial intelligence.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4 class="font-bold mb-5">
+                    Company
+                </h4>
+
+                <div class="space-y-3 text-sm text-gray-500">
+
+                    <a href="#about" class="block hover:text-white">About</a>
+                    <a href="#services" class="block hover:text-white">Services</a>
+                    <a href="#workflow" class="block hover:text-white">Process</a>
+                    <a href="#contact" class="block hover:text-white">Contact</a>
+
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <h4 class="font-bold mb-5">
+                    Services
+                </h4>
+
+                <div class="space-y-3 text-sm text-gray-500">
+
+                    <div>Image Annotation</div>
+                    <div>Video Annotation</div>
+                    <div>Text Annotation</div>
+                    <div>Quality Assurance</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="border-t border-white/5 mt-10 pt-7 flex flex-col md:flex-row justify-between gap-4 text-xs text-gray-600">
+
+            <div>
+                © 2026 FS AI Solutions. All rights reserved.
+            </div>
+
+            <div>
+                Founded by Nazmul Hoque Shoab
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     AI CHAT BUTTON
+========================================================= -->
+
+<button
+    id="chatToggle"
+    onclick="toggleChat()"
+    class="fixed bottom-6 right-6 z-[100] w-16 h-16 rounded-full bg-gradient-to-br from-purple-600 to-pink-600 shadow-2xl shadow-purple-900/30 flex items-center justify-center hover:scale-110 transition">
+
+    <i id="chatIcon" class="fas fa-comments text-xl"></i>
+
+</button>
+
+
+<!-- =========================================================
+     AI CHAT WINDOW
+========================================================= -->
+
+<div
+    id="chatBox"
+    class="hidden fixed bottom-28 right-6 z-[100] w-[calc(100%-3rem)] max-w-sm glass rounded-3xl overflow-hidden shadow-2xl">
+
+    <div class="bg-gradient-to-r from-purple-700 to-pink-600 p-5">
+
+        <div class="flex items-center justify-between">
+
+            <div class="flex items-center gap-3">
+
+                <img
+                    src="https://github.com/nazmulhoqueshoab2938-glitch/fs-ai-solutionsfs-ai-solutions-company/blob/main/Gemini_Generated_Image_sor4hlsor4hlsor4.jpg?raw=true"
+                    class="w-10 h-10 rounded-xl"
+                    alt="FS AI Assistant">
+
+                <div>
+
+                    <div class="font-bold text-sm">
+                        FS AI Assistant
+                    </div>
+
+                    <div class="text-[10px] text-purple-100">
+                        ● Online
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button onclick="toggleChat()">
+                <i class="fas fa-times"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="chatBody"
+         class="h-72 overflow-y-auto p-4 space-y-3 text-xs">
+
+        <div class="bg-white/5 rounded-2xl p-4 text-gray-300">
+            👋 Welcome to <b>FS AI Solutions</b>!
+            <br><br>
+            How can we help with your AI Data Annotation project?
+        </div>
+
+    </div>
+
+
+    <div class="p-3 border-t border-white/5">
+
+        <div class="flex gap-2 overflow-x-auto mb-3">
+
+            <button
+                onclick="quickMessage('What services do you provide?')"
+                class="whitespace-nowrap text-[10px] glass px-3 py-2 rounded-full">
+                Services
+            </button>
+
+            <button
+                onclick="quickMessage('How much does annotation cost?')"
+                class="whitespace-nowrap text-[10px] glass px-3 py-2 rounded-full">
+                Pricing
+            </button>
+
+            <button
+                onclick="quickMessage('How can I contact you?')"
+                class="whitespace-nowrap text-[10px] glass px-3 py-2 rounded-full">
+                Contact
+            </button>
+
+        </div>
+
+
+        <div class="flex gap-2">
+
+            <input
+                id="chatInput"
+                type="text"
+                placeholder="Ask something..."
+                class="flex-1 bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-xs outline-none focus:border-purple-500">
+
+            <button
+                onclick="sendChat()"
+                class="w-11 rounded-xl bg-purple-600 hover:bg-purple-500">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+function toggleMobileMenu() {
+
+    const menu = document.getElementById('mobileMenu');
+
+    menu.classList.toggle('hidden');
+
+}
+
+
+function toggleFAQ(button) {
+
+    const answer = button.nextElementSibling;
+
+    answer.classList.toggle('hidden');
+
+    const icon = button.querySelector('i');
+
+    if(answer.classList.contains('hidden')) {
+        icon.style.transform = 'rotate(0deg)';
+    } else {
+        icon.style.transform = 'rotate(180deg)';
+    }
+
+}
+
+
+function toggleChat() {
+
+    const box = document.getElementById('chatBox');
+
+    const icon = document.getElementById('chatIcon');
+
+    box.classList.toggle('hidden');
+
+    if(box.classList.contains('hidden')) {
+
+        icon.className = 'fas fa-comments text-xl';
+
+    } else {
+
+        icon.className = 'fas fa-times text-xl';
+
+    }
+
+}
+
+
+function quickMessage(message) {
+
+    document.getElementById('chatInput').value = message;
+
+    sendChat();
+
+}
+
+
+function sendChat() {
+
+    const input = document.getElementById('chatInput');
+
+    const text = input.value.trim();
+
+    if(!text) return;
+
+    const body = document.getElementById('chatBody');
+
+    body.innerHTML += `
+        <div class="flex justify-end">
+            <div class="bg-purple-600 rounded-2xl rounded-tr-none px-4 py-3 max-w-[80%]">
+                ${escapeHTML(text)}
+            </div>
+        </div>
+    `;
+
+    input.value = '';
+
+    body.scrollTop = body.scrollHeight;
+
+
+    setTimeout(() => {
+
+        const reply = getReply(text);
+
+        body.innerHTML += `
+            <div class="bg-white/5 rounded-2xl rounded-tl-none px-4 py-3 max-w-[85%] text-gray-300">
+                ${reply}
+            </div>
+        `;
+
+        body.scrollTop = body.scrollHeight;
+
+    }, 700);
+
+}
+
+
+function getReply(text) {
+
+    const q = text.toLowerCase();
+
+    if(q.includes('service') || q.includes('offer')) {
+
+        return `
+            We provide:
+            <br>• Image Annotation
+            <br>• Video Annotation
+            <br>• Text Annotation
+            <br>• Segmentation
+            <br>• Object Tracking
+            <br>• Quality Assurance
+        `;
+
+    }
+
+
+    if(q.includes('price') || q.includes('cost')) {
+
+        return `
+            Pricing depends on dataset volume,
+            annotation complexity and QA requirements.
+            <br><br>
+            <a href="https://wa.me/8801521567789"
+               target="_blank"
+               class="text-green-400 underline">
+               Contact us on WhatsApp for a custom quote.
+            </a>
+        `;
+
+    }
+
+
+    if(q.includes('contact') || q.includes('phone')) {
+
+        return `
+            <b>FS AI Solutions</b>
+            <br><br>
+            📞 01521567789
+            <br>
+            📧 nazmulhoqueshoab2938@gmail.com
+            <br><br>
+            <a href="https://wa.me/8801521567789"
+               target="_blank"
+               class="text-green-400 underline">
+               WhatsApp
+            </a>
+        `;
+
+    }
+
+
+    if(q.includes('cvat') || q.includes('supervisely')) {
+
+        return `
+            We currently support professional workflows
+            using <b>CVAT</b> and <b>Supervisely</b>.
+        `;
+
+    }
+
+
+    return `
+        Thanks for contacting FS AI Solutions!
+        <br><br>
+        For project-specific information,
+        please contact us through WhatsApp or Email.
+    `;
+
+}
+
+
+function escapeHTML(text) {
+
+    return text.replace(/[&<>'"]/g, function(tag) {
+
+        const chars = {
+            '&': '&amp;',
+            '<': '&lt;',
+            '>': '&gt;',
+            "'": '&#39;',
+            '"': '&quot;'
+        };
+
+        return chars[tag];
+
+    });
+
+}
+
+
+document.getElementById('chatInput').addEventListener('keypress', function(e) {
+
+    if(e.key === 'Enter') {
+
+        sendChat();
+
+    }
+
+});
+
+</script>
+
+
 </body>
 </html>
+```
