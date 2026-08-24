@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nazmulhoqueshoab2938-glitch.github.io/fs-ai-solutionsfs-ai-solutions-company/sitemap.xml
