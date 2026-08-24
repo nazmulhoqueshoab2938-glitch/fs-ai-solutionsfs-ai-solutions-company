@@ -1,227 +1,896 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>FS AI Solutions | AI Data Annotation & Training Data</title>
-    <meta name="description" content="FS AI Solutions provides high-quality AI data annotation, image annotation, video annotation, text annotation, segmentation, object tracking and quality assurance services.">
+    <!-- =====================================================
+         BASIC SEO
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#050507">
+
+    <title>
+        FS AI Solutions | AI Data Annotation Services & Training Data
+    </title>
+
+    <meta name="description"
+          content="FS AI Solutions provides professional AI data annotation services including image annotation, video annotation, text annotation, bounding boxes, polygon segmentation, semantic segmentation, object tracking, NLP annotation and quality assurance.">
+
+    <meta name="keywords"
+          content="FS AI Solutions, AI Data Annotation, AI Data Annotation Services, Data Annotation Services Bangladesh, AI Training Data, Data Annotation Company Bangladesh, Image Annotation, Video Annotation, Text Annotation, Bounding Box Annotation, Polygon Annotation, Semantic Segmentation, Instance Segmentation, Object Tracking, NLP Annotation, CVAT Annotation, Supervisely Annotation, AI Data Labeling, Machine Learning Training Data">
+
+    <meta name="author"
+          content="Nazmul Hoque Shoab">
+
+    <meta name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <meta name="googlebot"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <meta name="language" content="English">
+
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Geographic SEO -->
+
+    <meta name="geo.region" content="BD">
+    <meta name="geo.country" content="Bangladesh">
+
+    <!-- =====================================================
+         OPEN GRAPH / FACEBOOK / LINKEDIN
+    ====================================================== -->
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:title"
+          content="FS AI Solutions | AI Data Annotation Services">
+
+    <meta property="og:description"
+          content="Professional AI data annotation, image annotation, video annotation, text annotation, segmentation, object tracking and quality assurance services.">
+
+    <meta property="og:site_name"
+          content="FS AI Solutions">
+
+    <meta property="og:locale"
+          content="en_US">
+
+    <meta property="og:image"
+          content="https://github.com/nazmulhoqueshoab2938-glitch/fs-ai-solutionsfs-ai-solutions-company/blob/main/Gemini_Generated_Image_sor4hlsor4hlsor4.jpg?raw=true">
+
+    <!-- =====================================================
+         TWITTER CARD
+    ====================================================== -->
+
+    <meta name="twitter:card"
+          content="summary_large_image">
+
+    <meta name="twitter:title"
+          content="FS AI Solutions | AI Data Annotation Services">
+
+    <meta name="twitter:description"
+          content="Human-powered AI data annotation and training data solutions.">
+
+    <meta name="twitter:image"
+          content="https://github.com/nazmulhoqueshoab2938-glitch/fs-ai-solutionsfs-ai-solutions-company/blob/main/Gemini_Generated_Image_sor4hlsor4hlsor4.jpg?raw=true">
+
+
+    <!-- =====================================================
+         FAVICON / LOGO
+    ====================================================== -->
+
+    <link rel="icon"
+          type="image/jpeg"
+          href="https://github.com/nazmulhoqueshoab2938-glitch/fs-ai-solutionsfs-ai-solutions-company/blob/main/Gemini_Generated_Image_sor4hlsor4hlsor4.jpg?raw=true">
+
+
+    <!-- =====================================================
+         GOOGLE FONT
+    ====================================================== -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          rel="stylesheet">
+
+
+    <!-- =====================================================
+         TAILWIND
+    ====================================================== -->
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 
     <script>
+
         tailwind.config = {
+
             theme: {
+
                 extend: {
+
                     fontFamily: {
-                        inter: ['Inter', 'sans-serif']
+
+                        inter: [
+                            'Inter',
+                            'sans-serif'
+                        ]
+
                     },
+
                     animation: {
-                        'float': 'float 6s ease-in-out infinite',
-                        'float-slow': 'float 9s ease-in-out infinite',
-                        'pulse-slow': 'pulse 4s ease-in-out infinite'
+
+                        'float':
+                            'float 6s ease-in-out infinite',
+
+                        'float-slow':
+                            'float 9s ease-in-out infinite',
+
+                        'pulse-slow':
+                            'pulse 4s ease-in-out infinite'
+
                     },
+
                     keyframes: {
+
                         float: {
-                            '0%, 100%': { transform: 'translateY(0px)' },
-                            '50%': { transform: 'translateY(-18px)' }
+
+                            '0%, 100%': {
+                                transform: 'translateY(0px)'
+                            },
+
+                            '50%': {
+                                transform: 'translateY(-18px)'
+                            }
+
                         }
+
                     }
+
                 }
+
             }
-        }
+
+        };
+
     </script>
 
+
+    <!-- =====================================================
+         CUSTOM CSS
+    ====================================================== -->
+
     <style>
+
         html {
             scroll-behavior: smooth;
         }
 
         body {
+
             font-family: 'Inter', sans-serif;
+
             background:
-                radial-gradient(circle at 10% 10%, rgba(124,58,237,.13), transparent 28%),
-                radial-gradient(circle at 90% 20%, rgba(236,72,153,.10), transparent 25%),
+
+                radial-gradient(
+                    circle at 10% 10%,
+                    rgba(124,58,237,.13),
+                    transparent 28%
+                ),
+
+                radial-gradient(
+                    circle at 90% 20%,
+                    rgba(236,72,153,.10),
+                    transparent 25%
+                ),
+
                 #050507;
         }
 
+
         .glass {
+
             background: rgba(255,255,255,.035);
+
             backdrop-filter: blur(18px);
+
             -webkit-backdrop-filter: blur(18px);
+
             border: 1px solid rgba(255,255,255,.08);
         }
 
+
         .gradient-text {
-            background: linear-gradient(90deg,#a78bfa,#ec4899,#f97316);
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #a78bfa,
+                    #ec4899,
+                    #f97316
+                );
+
             -webkit-background-clip: text;
+
             background-clip: text;
+
             color: transparent;
         }
+
 
         .gradient-border {
             position: relative;
         }
 
+
         .gradient-border::before {
+
             content: "";
+
             position: absolute;
+
             inset: 0;
+
             border-radius: inherit;
+
             padding: 1px;
-            background: linear-gradient(135deg,rgba(168,85,247,.7),rgba(236,72,153,.3),transparent);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(168,85,247,.7),
+                    rgba(236,72,153,.3),
+                    transparent
+                );
+
             -webkit-mask:
                 linear-gradient(#fff 0 0) content-box,
                 linear-gradient(#fff 0 0);
+
             -webkit-mask-composite: xor;
+
             mask-composite: exclude;
+
             pointer-events: none;
         }
 
+
         .grid-bg {
+
             background-image:
-                linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+
+                linear-gradient(
+                    rgba(255,255,255,.035) 1px,
+                    transparent 1px
+                ),
+
+                linear-gradient(
+                    90deg,
+                    rgba(255,255,255,.035) 1px,
+                    transparent 1px
+                );
+
             background-size: 50px 50px;
         }
 
+
         .glow {
+
             box-shadow:
-                0 0 80px rgba(124,58,237,.15),
-                0 0 120px rgba(236,72,153,.08);
+
+                0 0 80px
+                rgba(124,58,237,.15),
+
+                0 0 120px
+                rgba(236,72,153,.08);
         }
+
 
         .service-card {
-            transition: .35s ease;
+
+            transition:
+                .35s ease;
         }
+
 
         .service-card:hover {
-            transform: translateY(-8px);
-            border-color: rgba(168,85,247,.45);
-            box-shadow: 0 20px 70px rgba(0,0,0,.35);
+
+            transform:
+                translateY(-8px);
+
+            border-color:
+                rgba(168,85,247,.45);
+
+            box-shadow:
+                0 20px 70px
+                rgba(0,0,0,.35);
         }
 
+
         .nav-link {
+
             position: relative;
         }
 
+
         .nav-link::after {
+
             content: "";
+
             position: absolute;
+
             width: 0;
+
             height: 2px;
+
             bottom: -7px;
+
             left: 0;
-            background: linear-gradient(90deg,#a78bfa,#ec4899);
-            transition: .3s;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #a78bfa,
+                    #ec4899
+                );
+
+            transition:
+                .3s;
         }
+
 
         .nav-link:hover::after {
             width: 100%;
         }
 
+
         .blob {
-            filter: blur(70px);
-            opacity: .25;
+
+            filter:
+                blur(70px);
+
+            opacity:
+                .25;
         }
+
+
+        .tag {
+
+            background:
+                rgba(255,255,255,.04);
+
+            border:
+                1px solid rgba(255,255,255,.08);
+
+            padding:
+                5px 9px;
+
+            border-radius:
+                999px;
+
+            font-size:
+                10px;
+
+            color:
+                #9ca3af;
+        }
+
+
+        .faq-answer {
+            transition:
+                all .3s ease;
+        }
+
+
+        ::selection {
+
+            background:
+                #7c3aed;
+
+            color:
+                white;
+        }
+
     </style>
+
+
+    <!-- =====================================================
+         ORGANIZATION SCHEMA
+    ====================================================== -->
+
+    <script type="application/ld+json">
+
+    {
+        "@context": "https://schema.org",
+
+        "@type": "Organization",
+
+        "name": "FS AI Solutions",
+
+        "alternateName": "FS AI",
+
+        "description": "Professional AI data annotation and AI training data solutions provider.",
+
+        "founder": {
+
+            "@type": "Person",
+
+            "name": "Nazmul Hoque Shoab",
+
+            "jobTitle": "Founder & Owner"
+
+        },
+
+        "email":
+            "nazmulhoqueshoab2938@gmail.com",
+
+        "telephone":
+            "+8801521567789",
+
+        "logo":
+            "https://github.com/nazmulhoqueshoab2938-glitch/fs-ai-solutionsfs-ai-solutions-company/blob/main/Gemini_Generated_Image_sor4hlsor4hlsor4.jpg?raw=true",
+
+        "sameAs": [
+
+            "https://www.linkedin.com/in/nazmul-hoque-shoab-473a23228/"
+
+        ],
+
+        "knowsAbout": [
+
+            "AI Data Annotation",
+
+            "Image Annotation",
+
+            "Video Annotation",
+
+            "Text Annotation",
+
+            "Computer Vision",
+
+            "Machine Learning",
+
+            "NLP",
+
+            "Bounding Box Annotation",
+
+            "Polygon Annotation",
+
+            "Semantic Segmentation",
+
+            "Object Tracking",
+
+            "Quality Assurance"
+
+        ]
+
+    }
+
+    </script>
+
+
+    <!-- =====================================================
+         SERVICE SCHEMA
+    ====================================================== -->
+
+    <script type="application/ld+json">
+
+    {
+
+        "@context": "https://schema.org",
+
+        "@type": "Service",
+
+        "serviceType":
+            "AI Data Annotation Services",
+
+        "name":
+            "AI Data Annotation Services",
+
+        "description":
+            "Professional image, video, text and AI training data annotation services.",
+
+        "provider": {
+
+            "@type": "Organization",
+
+            "name":
+                "FS AI Solutions"
+
+        },
+
+        "areaServed": {
+
+            "@type": "Place",
+
+            "name":
+                "Worldwide"
+
+        },
+
+        "hasOfferCatalog": {
+
+            "@type":
+                "OfferCatalog",
+
+            "name":
+                "AI Data Annotation Services",
+
+            "itemListElement": [
+
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Image Annotation"
+                    }
+                },
+
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Video Annotation"
+                    }
+                },
+
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Text Annotation"
+                    }
+                },
+
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Semantic Segmentation"
+                    }
+                },
+
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Object Tracking"
+                    }
+                },
+
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Quality Assurance"
+                    }
+                }
+
+            ]
+
+        }
+
+    }
+
+    </script>
+
+
+    <!-- =====================================================
+         FAQ SCHEMA
+    ====================================================== -->
+
+    <script type="application/ld+json">
+
+    {
+
+        "@context": "https://schema.org",
+
+        "@type": "FAQPage",
+
+        "mainEntity": [
+
+            {
+
+                "@type": "Question",
+
+                "name":
+                    "What AI data annotation services does FS AI Solutions provide?",
+
+                "acceptedAnswer": {
+
+                    "@type": "Answer",
+
+                    "text":
+                        "FS AI Solutions provides image annotation, video annotation, text annotation, bounding boxes, polygon annotation, semantic segmentation, instance segmentation, object tracking, NLP annotation and quality assurance services."
+
+                }
+
+            },
+
+            {
+
+                "@type": "Question",
+
+                "name":
+                    "What type of data can FS AI Solutions annotate?",
+
+                "acceptedAnswer": {
+
+                    "@type": "Answer",
+
+                    "text":
+                        "We support image, video and text datasets for computer vision, machine learning and NLP applications."
+
+                }
+
+            },
+
+            {
+
+                "@type": "Question",
+
+                "name":
+                    "Which annotation platforms does FS AI Solutions use?",
+
+                "acceptedAnswer": {
+
+                    "@type": "Answer",
+
+                    "text":
+                        "Our professional annotation workflows include CVAT and Supervisely depending on project requirements."
+
+                }
+
+            },
+
+            {
+
+                "@type": "Question",
+
+                "name":
+                    "Does FS AI Solutions provide AI data annotation services in Bangladesh?",
+
+                "acceptedAnswer": {
+
+                    "@type": "Answer",
+
+                    "text":
+                        "Yes. FS AI Solutions is based in Bangladesh and provides AI data annotation and training data services for local and international clients."
+
+                }
+
+            },
+
+            {
+
+                "@type": "Question",
+
+                "name":
+                    "How is AI data annotation pricing calculated?",
+
+                "acceptedAnswer": {
+
+                    "@type": "Answer",
+
+                    "text":
+                        "Pricing depends on dataset volume, annotation type, complexity, quality assurance requirements and project timeline. Clients can contact FS AI Solutions for a custom quote."
+
+                }
+
+            }
+
+        ]
+
+    }
+
+    </script>
+
 </head>
+
 
 <body class="text-white antialiased">
 
-<!-- =========================================================
+
+<!-- =====================================================
      NAVBAR
-========================================================= -->
+====================================================== -->
 
 <header class="fixed top-0 left-0 right-0 z-50">
+
     <nav class="max-w-7xl mx-auto mt-4 px-5">
+
         <div class="glass rounded-2xl px-5 py-3 flex items-center justify-between">
 
-            <a href="#home" class="flex items-center gap-3">
+            <a href="#home"
+               class="flex items-center gap-3"
+               aria-label="FS AI Solutions Home">
+
                 <img
                     src="https://github.com/nazmulhoqueshoab2938-glitch/fs-ai-solutionsfs-ai-solutions-company/blob/main/Gemini_Generated_Image_sor4hlsor4hlsor4.jpg?raw=true"
                     class="w-10 h-10 rounded-xl object-cover"
-                    alt="FS AI Solutions Logo">
+                    alt="FS AI Solutions Logo"
+                    loading="eager">
 
                 <div>
+
                     <div class="font-extrabold tracking-tight">
-                        FS AI <span class="gradient-text">SOLUTIONS</span>
+
+                        FS AI
+                        <span class="gradient-text">
+                            SOLUTIONS
+                        </span>
+
                     </div>
+
                     <div class="text-[9px] text-gray-500 tracking-[.25em]">
+
                         AI DATA SOLUTIONS
+
                     </div>
+
                 </div>
+
             </a>
 
+
             <div class="hidden lg:flex items-center gap-7 text-sm text-gray-300">
-                <a href="#services" class="nav-link hover:text-white transition">Services</a>
-                <a href="#solutions" class="nav-link hover:text-white transition">Solutions</a>
-                <a href="#workflow" class="nav-link hover:text-white transition">Process</a>
-                <a href="#industries" class="nav-link hover:text-white transition">Industries</a>
-                <a href="#about" class="nav-link hover:text-white transition">About</a>
-                <a href="#faq" class="nav-link hover:text-white transition">FAQ</a>
+
+                <a href="#services"
+                   class="nav-link hover:text-white transition">
+                    Services
+                </a>
+
+                <a href="#solutions"
+                   class="nav-link hover:text-white transition">
+                    Solutions
+                </a>
+
+                <a href="#workflow"
+                   class="nav-link hover:text-white transition">
+                    Process
+                </a>
+
+                <a href="#industries"
+                   class="nav-link hover:text-white transition">
+                    Industries
+                </a>
+
+                <a href="#about"
+                   class="nav-link hover:text-white transition">
+                    About
+                </a>
+
+                <a href="#faq"
+                   class="nav-link hover:text-white transition">
+                    FAQ
+                </a>
+
             </div>
 
+
             <div class="flex items-center gap-3">
+
                 <a
                     href="#contact"
                     class="hidden sm:inline-flex bg-white text-black px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-gray-200 transition">
+
                     Get Started
+
                 </a>
+
 
                 <button
                     onclick="toggleMobileMenu()"
+                    aria-label="Open navigation menu"
                     class="lg:hidden w-10 h-10 glass rounded-xl">
+
                     <i class="fas fa-bars"></i>
+
                 </button>
+
             </div>
+
         </div>
 
-        <div id="mobileMenu" class="hidden mt-2 glass rounded-2xl p-5 lg:hidden">
+
+        <div id="mobileMenu"
+             class="hidden mt-2 glass rounded-2xl p-5 lg:hidden">
+
             <div class="flex flex-col gap-5 text-gray-300 text-sm">
-                <a href="#services">Services</a>
-                <a href="#solutions">Solutions</a>
-                <a href="#workflow">Process</a>
-                <a href="#industries">Industries</a>
-                <a href="#about">About</a>
-                <a href="#faq">FAQ</a>
-                <a href="#contact" class="text-purple-400 font-bold">Get Started →</a>
+
+                <a href="#services"
+                   onclick="closeMobileMenu()">
+                    Services
+                </a>
+
+                <a href="#solutions"
+                   onclick="closeMobileMenu()">
+                    Solutions
+                </a>
+
+                <a href="#workflow"
+                   onclick="closeMobileMenu()">
+                    Process
+                </a>
+
+                <a href="#industries"
+                   onclick="closeMobileMenu()">
+                    Industries
+                </a>
+
+                <a href="#about"
+                   onclick="closeMobileMenu()">
+                    About
+                </a>
+
+                <a href="#faq"
+                   onclick="closeMobileMenu()">
+                    FAQ
+                </a>
+
+                <a href="#contact"
+                   onclick="closeMobileMenu()"
+                   class="text-purple-400 font-bold">
+
+                    Get Started →
+
+                </a>
+
             </div>
+
         </div>
+
     </nav>
+
 </header>
 
 
-<!-- =========================================================
+<!-- =====================================================
      HERO
-========================================================= -->
+====================================================== -->
 
-<section id="home" class="relative min-h-screen overflow-hidden pt-36 pb-20">
+<section id="home"
+         class="relative min-h-screen overflow-hidden pt-36 pb-20">
 
     <div class="absolute w-80 h-80 bg-purple-600 rounded-full blob top-32 left-10"></div>
+
     <div class="absolute w-80 h-80 bg-pink-600 rounded-full blob top-52 right-10"></div>
 
     <div class="absolute inset-0 grid-bg opacity-40"></div>
+
 
     <div class="relative max-w-7xl mx-auto px-6">
 
         <div class="grid lg:grid-cols-2 gap-16 items-center">
 
-            <!-- LEFT -->
 
             <div>
 
                 <div class="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-xs text-gray-300 mb-7">
+
                     <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+
                     Human-Powered Data for AI
+
                 </div>
+
 
                 <h1 class="text-5xl md:text-6xl xl:text-7xl font-extrabold leading-[1.05] tracking-tight">
 
@@ -235,47 +904,69 @@
 
                 </h1>
 
+
                 <p class="mt-7 text-gray-400 text-lg leading-8 max-w-xl">
 
-                    We transform raw images, videos, audio and text into
-                    high-quality, AI-ready training data through expert
-                    annotation, rigorous quality assurance and scalable
-                    human-in-the-loop workflows.
+                    FS AI Solutions provides professional
+                    <strong class="text-gray-300">
+                        AI data annotation services
+                    </strong>
+                    that transform raw images, videos and text into
+                    high-quality AI training data.
 
                 </p>
+
 
                 <div class="flex flex-wrap gap-4 mt-9">
 
                     <a
                         href="#contact"
                         class="px-7 py-4 rounded-xl bg-white text-black font-bold hover:scale-[1.02] transition">
+
                         Start Your Project
+
                         <i class="fas fa-arrow-right ml-2"></i>
+
                     </a>
+
 
                     <a
                         href="#services"
                         class="px-7 py-4 rounded-xl glass font-semibold hover:bg-white/10 transition">
+
                         Explore Services
+
                     </a>
 
                 </div>
 
+
                 <div class="flex flex-wrap items-center gap-6 mt-10 text-xs text-gray-500">
 
                     <span>
+
                         <i class="fas fa-check-circle text-green-400 mr-2"></i>
+
                         Human Verified
+
                     </span>
 
+
                     <span>
+
                         <i class="fas fa-check-circle text-green-400 mr-2"></i>
+
                         Scalable
+
                     </span>
 
+
                     <span>
+
                         <i class="fas fa-check-circle text-green-400 mr-2"></i>
+
                         Quality Focused
+
                     </span>
 
                 </div>
@@ -283,7 +974,7 @@
             </div>
 
 
-            <!-- RIGHT AI VISUAL -->
+            <!-- AI VISUAL -->
 
             <div class="relative">
 
@@ -296,20 +987,29 @@
                         <div class="absolute top-4 left-4 right-4 flex justify-between z-10">
 
                             <span class="glass px-3 py-2 rounded-lg text-[10px] text-gray-300">
+
                                 <span class="w-2 h-2 bg-green-400 rounded-full inline-block mr-2"></span>
+
                                 LIVE ANNOTATION
+
                             </span>
 
+
                             <span class="glass px-3 py-2 rounded-lg text-[10px] text-purple-300">
+
                                 COMPUTER VISION
+
                             </span>
 
                         </div>
 
+
                         <div class="h-[430px] relative flex items-center justify-center">
 
                             <div class="absolute w-72 h-72 rounded-full border border-purple-500/20 animate-pulse-slow"></div>
+
                             <div class="absolute w-52 h-52 rounded-full border border-pink-500/20"></div>
+
 
                             <div class="relative w-64 h-72 rounded-3xl bg-gradient-to-br from-purple-900/70 to-pink-900/30 border border-purple-400/30 flex items-center justify-center animate-float">
 
@@ -318,62 +1018,100 @@
                                     <i class="fas fa-brain text-6xl text-purple-300 mb-5"></i>
 
                                     <div class="text-sm font-bold">
+
                                         AI TRAINING DATA
+
                                     </div>
 
                                     <div class="text-xs text-gray-500 mt-2">
+
                                         Structured • Verified • Ready
+
                                     </div>
 
                                 </div>
 
                             </div>
 
-                            <!-- Floating labels -->
 
                             <div class="absolute top-28 left-8 glass px-4 py-3 rounded-xl text-xs animate-float">
+
                                 <i class="fas fa-vector-square text-purple-400 mr-2"></i>
+
                                 Bounding Box
+
                             </div>
 
+
                             <div class="absolute bottom-28 right-8 glass px-4 py-3 rounded-xl text-xs animate-float">
+
                                 <i class="fas fa-layer-group text-pink-400 mr-2"></i>
+
                                 Segmentation
+
                             </div>
 
                         </div>
 
+
                         <div class="border-t border-white/5 grid grid-cols-3">
 
                             <div class="p-4 text-center">
-                                <div class="font-bold">Image</div>
-                                <div class="text-[10px] text-gray-500 mt-1">Annotation</div>
+
+                                <div class="font-bold">
+                                    Image
+                                </div>
+
+                                <div class="text-[10px] text-gray-500 mt-1">
+                                    Annotation
+                                </div>
+
                             </div>
+
 
                             <div class="p-4 text-center border-x border-white/5">
-                                <div class="font-bold">Video</div>
-                                <div class="text-[10px] text-gray-500 mt-1">Tracking</div>
+
+                                <div class="font-bold">
+                                    Video
+                                </div>
+
+                                <div class="text-[10px] text-gray-500 mt-1">
+                                    Tracking
+                                </div>
+
                             </div>
 
+
                             <div class="p-4 text-center">
-                                <div class="font-bold">Text</div>
-                                <div class="text-[10px] text-gray-500 mt-1">NLP</div>
+
+                                <div class="font-bold">
+                                    Text
+                                </div>
+
+                                <div class="text-[10px] text-gray-500 mt-1">
+                                    NLP
+                                </div>
+
                             </div>
 
                         </div>
 
                     </div>
+
                 </div>
+
             </div>
 
         </div>
+
     </div>
+
 </section>
 
 
-<!-- =========================================================
+<!-- =====================================================
      TRUST BAR
-========================================================= -->
+====================================================== -->
 
 <section class="border-y border-white/5 bg-white/[.015]">
 
@@ -382,23 +1120,54 @@
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
 
             <div>
-                <div class="text-3xl font-extrabold gradient-text">2+</div>
-                <div class="text-xs text-gray-500 mt-2">Years Experience</div>
+
+                <div class="text-3xl font-extrabold gradient-text">
+                    2+
+                </div>
+
+                <div class="text-xs text-gray-500 mt-2">
+                    Years Experience
+                </div>
+
             </div>
 
-            <div>
-                <div class="text-3xl font-extrabold gradient-text">99%+</div>
-                <div class="text-xs text-gray-500 mt-2">Quality Focus</div>
-            </div>
 
             <div>
-                <div class="text-3xl font-extrabold gradient-text">24/7</div>
-                <div class="text-xs text-gray-500 mt-2">Project Scalability</div>
+
+                <div class="text-3xl font-extrabold gradient-text">
+                    99%+
+                </div>
+
+                <div class="text-xs text-gray-500 mt-2">
+                    Quality Focus
+                </div>
+
             </div>
 
+
             <div>
-                <div class="text-3xl font-extrabold gradient-text">2</div>
-                <div class="text-xs text-gray-500 mt-2">Core Annotation Platforms</div>
+
+                <div class="text-3xl font-extrabold gradient-text">
+                    24/7
+                </div>
+
+                <div class="text-xs text-gray-500 mt-2">
+                    Project Scalability
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <div class="text-3xl font-extrabold gradient-text">
+                    2
+                </div>
+
+                <div class="text-xs text-gray-500 mt-2">
+                    Core Annotation Platforms
+                </div>
+
             </div>
 
         </div>
@@ -408,9 +1177,9 @@
 </section>
 
 
-<!-- =========================================================
-     WHAT WE DO
-========================================================= -->
+<!-- =====================================================
+     SOLUTIONS
+====================================================== -->
 
 <section id="solutions" class="py-28">
 
@@ -422,15 +1191,24 @@
                 What We Do
             </span>
 
+
             <h2 class="text-4xl md:text-5xl font-extrabold mt-4">
+
                 Turning raw data into
-                <span class="gradient-text">AI-ready intelligence.</span>
+
+                <span class="gradient-text">
+                    AI-ready intelligence.
+                </span>
+
             </h2>
 
+
             <p class="text-gray-400 mt-6 leading-7">
-                From computer vision to natural language processing,
+
                 FS AI Solutions helps AI teams create structured,
-                reliable and high-quality datasets.
+                reliable and high-quality datasets for computer vision,
+                machine learning and natural language processing.
+
             </p>
 
         </div>
@@ -438,25 +1216,43 @@
 
         <div class="grid md:grid-cols-3 gap-6">
 
+
             <div class="glass rounded-3xl p-8 service-card gradient-border">
 
                 <div class="w-14 h-14 rounded-2xl bg-purple-500/10 flex items-center justify-center text-purple-400 text-2xl">
+
                     <i class="fas fa-image"></i>
+
                 </div>
+
 
                 <h3 class="text-xl font-bold mt-7">
                     Computer Vision
                 </h3>
 
+
                 <p class="text-gray-500 text-sm leading-6 mt-3">
-                    Build visual intelligence with accurately labeled
-                    images and videos.
+
+                    High-quality image annotation and visual training
+                    data for computer vision and machine learning.
+
                 </p>
 
+
                 <div class="flex flex-wrap gap-2 mt-6">
-                    <span class="tag">Bounding Boxes</span>
-                    <span class="tag">Polygons</span>
-                    <span class="tag">Segmentation</span>
+
+                    <span class="tag">
+                        Bounding Boxes
+                    </span>
+
+                    <span class="tag">
+                        Polygons
+                    </span>
+
+                    <span class="tag">
+                        Segmentation
+                    </span>
+
                 </div>
 
             </div>
@@ -465,22 +1261,39 @@
             <div class="glass rounded-3xl p-8 service-card gradient-border">
 
                 <div class="w-14 h-14 rounded-2xl bg-pink-500/10 flex items-center justify-center text-pink-400 text-2xl">
+
                     <i class="fas fa-language"></i>
+
                 </div>
+
 
                 <h3 class="text-xl font-bold mt-7">
                     NLP & Text Data
                 </h3>
 
+
                 <p class="text-gray-500 text-sm leading-6 mt-3">
-                    Structured language datasets for NLP, conversational
-                    AI and machine learning systems.
+
+                    Structured language datasets for NLP,
+                    conversational AI and machine learning systems.
+
                 </p>
 
+
                 <div class="flex flex-wrap gap-2 mt-6">
-                    <span class="tag">NER</span>
-                    <span class="tag">Classification</span>
-                    <span class="tag">Sentiment</span>
+
+                    <span class="tag">
+                        NER
+                    </span>
+
+                    <span class="tag">
+                        Classification
+                    </span>
+
+                    <span class="tag">
+                        Sentiment
+                    </span>
+
                 </div>
 
             </div>
@@ -489,22 +1302,39 @@
             <div class="glass rounded-3xl p-8 service-card gradient-border">
 
                 <div class="w-14 h-14 rounded-2xl bg-orange-500/10 flex items-center justify-center text-orange-400 text-2xl">
+
                     <i class="fas fa-video"></i>
+
                 </div>
+
 
                 <h3 class="text-xl font-bold mt-7">
                     Video & Tracking
                 </h3>
 
+
                 <p class="text-gray-500 text-sm leading-6 mt-3">
-                    Frame-level annotation and object tracking for
-                    advanced computer vision applications.
+
+                    Frame-level annotation and object tracking
+                    for advanced computer vision applications.
+
                 </p>
 
+
                 <div class="flex flex-wrap gap-2 mt-6">
-                    <span class="tag">Tracking</span>
-                    <span class="tag">Frame Labeling</span>
-                    <span class="tag">Activity</span>
+
+                    <span class="tag">
+                        Tracking
+                    </span>
+
+                    <span class="tag">
+                        Frame Labeling
+                    </span>
+
+                    <span class="tag">
+                        Activity
+                    </span>
+
                 </div>
 
             </div>
@@ -516,11 +1346,12 @@
 </section>
 
 
-<!-- =========================================================
+<!-- =====================================================
      SERVICES
-========================================================= -->
+====================================================== -->
 
-<section id="services" class="py-28 bg-white/[.015] border-y border-white/5">
+<section id="services"
+         class="py-28 bg-white/[.015] border-y border-white/5">
 
     <div class="max-w-7xl mx-auto px-6">
 
@@ -530,69 +1361,136 @@
                 Our Capabilities
             </span>
 
+
             <h2 class="text-4xl md:text-5xl font-extrabold mt-4">
+
                 Complete AI Data
-                <span class="gradient-text">Annotation Services</span>
+
+                <span class="gradient-text">
+                    Annotation Services
+                </span>
+
             </h2>
+
+
+            <p class="text-gray-500 mt-5">
+
+                Professional AI data labeling and annotation
+                services for machine learning and AI companies.
+
+            </p>
 
         </div>
 
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-16">
 
-            <!-- Card -->
 
             <div class="glass p-7 rounded-2xl service-card">
+
                 <i class="fas fa-vector-square text-purple-400 text-2xl"></i>
-                <h3 class="font-bold text-lg mt-5">Bounding Box</h3>
+
+                <h3 class="font-bold text-lg mt-5">
+                    Bounding Box Annotation
+                </h3>
+
                 <p class="text-gray-500 text-sm mt-2">
-                    Precise object detection annotation for computer vision models.
+
+                    Precise object detection annotation
+                    for computer vision models.
+
                 </p>
+
             </div>
 
 
             <div class="glass p-7 rounded-2xl service-card">
+
                 <i class="fas fa-draw-polygon text-pink-400 text-2xl"></i>
-                <h3 class="font-bold text-lg mt-5">Polygon Annotation</h3>
+
+                <h3 class="font-bold text-lg mt-5">
+                    Polygon Annotation
+                </h3>
+
                 <p class="text-gray-500 text-sm mt-2">
-                    Pixel-level object outlining for complex shapes and scenes.
+
+                    Accurate object outlining for
+                    complex shapes and scenes.
+
                 </p>
+
             </div>
 
 
             <div class="glass p-7 rounded-2xl service-card">
+
                 <i class="fas fa-layer-group text-purple-400 text-2xl"></i>
-                <h3 class="font-bold text-lg mt-5">Segmentation</h3>
+
+                <h3 class="font-bold text-lg mt-5">
+                    Semantic & Instance Segmentation
+                </h3>
+
                 <p class="text-gray-500 text-sm mt-2">
-                    Semantic and instance segmentation for advanced AI models.
+
+                    Pixel-level semantic and instance
+                    segmentation for advanced AI models.
+
                 </p>
+
             </div>
 
 
             <div class="glass p-7 rounded-2xl service-card">
+
                 <i class="fas fa-route text-pink-400 text-2xl"></i>
-                <h3 class="font-bold text-lg mt-5">Object Tracking</h3>
+
+                <h3 class="font-bold text-lg mt-5">
+                    Object Tracking
+                </h3>
+
                 <p class="text-gray-500 text-sm mt-2">
-                    Frame-by-frame tracking for video and autonomous systems.
+
+                    Frame-by-frame tracking for video,
+                    robotics and autonomous systems.
+
                 </p>
+
             </div>
 
 
             <div class="glass p-7 rounded-2xl service-card">
+
                 <i class="fas fa-file-alt text-purple-400 text-2xl"></i>
-                <h3 class="font-bold text-lg mt-5">Text Annotation</h3>
+
+                <h3 class="font-bold text-lg mt-5">
+                    Text Annotation & NLP
+                </h3>
+
                 <p class="text-gray-500 text-sm mt-2">
-                    NER, classification, categorization and NLP dataset preparation.
+
+                    NER, classification, categorization,
+                    sentiment and NLP dataset preparation.
+
                 </p>
+
             </div>
 
 
             <div class="glass p-7 rounded-2xl service-card">
+
                 <i class="fas fa-check-double text-pink-400 text-2xl"></i>
-                <h3 class="font-bold text-lg mt-5">Quality Assurance</h3>
+
+                <h3 class="font-bold text-lg mt-5">
+                    Quality Assurance
+                </h3>
+
                 <p class="text-gray-500 text-sm mt-2">
-                    Multi-level human review and validation for reliable datasets.
+
+                    Multi-level human review and validation
+                    for reliable AI training datasets.
+
                 </p>
+
             </div>
 
         </div>
@@ -602,9 +1500,9 @@
 </section>
 
 
-<!-- =========================================================
+<!-- =====================================================
      WORKFLOW
-========================================================= -->
+====================================================== -->
 
 <section id="workflow" class="py-28">
 
@@ -612,32 +1510,48 @@
 
         <div class="grid lg:grid-cols-2 gap-16 items-center">
 
+
             <div>
 
                 <span class="text-purple-400 text-xs font-bold tracking-[.25em] uppercase">
                     Our Process
                 </span>
 
+
                 <h2 class="text-4xl md:text-5xl font-extrabold mt-4">
+
                     From raw data to
-                    <span class="gradient-text">production-ready datasets.</span>
+
+                    <span class="gradient-text">
+                        production-ready datasets.
+                    </span>
+
                 </h2>
 
+
                 <p class="text-gray-500 mt-6 leading-7">
-                    Our structured workflow keeps annotation consistent,
-                    scalable and aligned with your machine learning objectives.
+
+                    Our structured annotation workflow keeps
+                    datasets consistent, scalable and aligned
+                    with machine learning objectives.
+
                 </p>
+
 
                 <a href="#contact"
                    class="inline-flex mt-8 px-6 py-3 rounded-xl bg-white text-black font-bold">
+
                     Discuss Your Dataset
+
                     <i class="fas fa-arrow-right ml-2"></i>
+
                 </a>
 
             </div>
 
 
             <div class="space-y-4">
+
 
                 <div class="glass rounded-2xl p-6 flex gap-5">
 
@@ -646,10 +1560,18 @@
                     </div>
 
                     <div>
-                        <h3 class="font-bold">Requirement Analysis</h3>
+
+                        <h3 class="font-bold">
+                            Requirement Analysis
+                        </h3>
+
                         <p class="text-gray-500 text-sm mt-1">
-                            Understand dataset goals, classes and annotation requirements.
+
+                            Understand dataset goals,
+                            classes and annotation requirements.
+
                         </p>
+
                     </div>
 
                 </div>
@@ -662,10 +1584,18 @@
                     </div>
 
                     <div>
-                        <h3 class="font-bold">Guideline & SOP</h3>
+
+                        <h3 class="font-bold">
+                            Guideline & SOP
+                        </h3>
+
                         <p class="text-gray-500 text-sm mt-1">
-                            Build detailed annotation rules and edge-case guidelines.
+
+                            Create detailed annotation rules
+                            and edge-case guidelines.
+
                         </p>
+
                     </div>
 
                 </div>
@@ -678,10 +1608,18 @@
                     </div>
 
                     <div>
-                        <h3 class="font-bold">Annotation</h3>
+
+                        <h3 class="font-bold">
+                            Annotation
+                        </h3>
+
                         <p class="text-gray-500 text-sm mt-1">
-                            Trained annotators label datasets using professional tools.
+
+                            Trained annotators label datasets
+                            using professional annotation tools.
+
                         </p>
+
                     </div>
 
                 </div>
@@ -694,10 +1632,18 @@
                     </div>
 
                     <div>
-                        <h3 class="font-bold">Quality Review</h3>
+
+                        <h3 class="font-bold">
+                            Quality Review
+                        </h3>
+
                         <p class="text-gray-500 text-sm mt-1">
-                            Self-review, peer QA and final validation.
+
+                            Self-review, peer QA and
+                            final validation.
+
                         </p>
+
                     </div>
 
                 </div>
@@ -710,10 +1656,18 @@
                     </div>
 
                     <div>
-                        <h3 class="font-bold">Correction & Validation</h3>
+
+                        <h3 class="font-bold">
+                            Correction & Validation
+                        </h3>
+
                         <p class="text-gray-500 text-sm mt-1">
-                            Errors are identified, corrected and revalidated.
+
+                            Errors are identified,
+                            corrected and revalidated.
+
                         </p>
+
                     </div>
 
                 </div>
@@ -726,10 +1680,18 @@
                     </div>
 
                     <div>
-                        <h3 class="font-bold">Dataset Delivery</h3>
+
+                        <h3 class="font-bold">
+                            Dataset Delivery
+                        </h3>
+
                         <p class="text-gray-500 text-sm mt-1">
-                            Final AI-ready dataset delivered in the required format.
+
+                            Final AI-ready dataset delivered
+                            in the required format.
+
                         </p>
+
                     </div>
 
                 </div>
@@ -743,11 +1705,12 @@
 </section>
 
 
-<!-- =========================================================
+<!-- =====================================================
      INDUSTRIES
-========================================================= -->
+====================================================== -->
 
-<section id="industries" class="py-28 bg-white/[.015] border-y border-white/5">
+<section id="industries"
+         class="py-28 bg-white/[.015] border-y border-white/5">
 
     <div class="max-w-7xl mx-auto px-6">
 
@@ -757,9 +1720,15 @@
                 Industries
             </span>
 
+
             <h2 class="text-4xl md:text-5xl font-extrabold mt-4">
+
                 Data for every
-                <span class="gradient-text">AI industry.</span>
+
+                <span class="gradient-text">
+                    AI industry.
+                </span>
+
             </h2>
 
         </div>
@@ -767,75 +1736,124 @@
 
         <div class="grid grid-cols-2 md:grid-cols-4 gap-5 mt-16">
 
+
             <div class="glass rounded-2xl p-7 text-center service-card">
+
                 <i class="fas fa-car text-3xl text-purple-400"></i>
-                <h3 class="font-bold mt-5">Automotive</h3>
+
+                <h3 class="font-bold mt-5">
+                    Automotive
+                </h3>
+
                 <p class="text-xs text-gray-500 mt-2">
                     Autonomous driving & vision
                 </p>
+
             </div>
 
 
             <div class="glass rounded-2xl p-7 text-center service-card">
+
                 <i class="fas fa-robot text-3xl text-pink-400"></i>
-                <h3 class="font-bold mt-5">Robotics</h3>
+
+                <h3 class="font-bold mt-5">
+                    Robotics
+                </h3>
+
                 <p class="text-xs text-gray-500 mt-2">
                     Object detection & tracking
                 </p>
+
             </div>
 
 
             <div class="glass rounded-2xl p-7 text-center service-card">
+
                 <i class="fas fa-shopping-bag text-3xl text-purple-400"></i>
-                <h3 class="font-bold mt-5">Retail</h3>
+
+                <h3 class="font-bold mt-5">
+                    Retail
+                </h3>
+
                 <p class="text-xs text-gray-500 mt-2">
                     Product recognition & analytics
                 </p>
+
             </div>
 
 
             <div class="glass rounded-2xl p-7 text-center service-card">
+
                 <i class="fas fa-heartbeat text-3xl text-pink-400"></i>
-                <h3 class="font-bold mt-5">Healthcare</h3>
+
+                <h3 class="font-bold mt-5">
+                    Healthcare
+                </h3>
+
                 <p class="text-xs text-gray-500 mt-2">
                     Medical AI datasets
                 </p>
+
             </div>
 
 
             <div class="glass rounded-2xl p-7 text-center service-card">
+
                 <i class="fas fa-shield-alt text-3xl text-purple-400"></i>
-                <h3 class="font-bold mt-5">Security</h3>
+
+                <h3 class="font-bold mt-5">
+                    Security
+                </h3>
+
                 <p class="text-xs text-gray-500 mt-2">
                     Surveillance & detection
                 </p>
+
             </div>
 
 
             <div class="glass rounded-2xl p-7 text-center service-card">
+
                 <i class="fas fa-store text-3xl text-pink-400"></i>
-                <h3 class="font-bold mt-5">E-commerce</h3>
+
+                <h3 class="font-bold mt-5">
+                    E-commerce
+                </h3>
+
                 <p class="text-xs text-gray-500 mt-2">
                     Product & image datasets
                 </p>
+
             </div>
 
 
             <div class="glass rounded-2xl p-7 text-center service-card">
+
                 <i class="fas fa-comments text-3xl text-purple-400"></i>
-                <h3 class="font-bold mt-5">Conversational AI</h3>
+
+                <h3 class="font-bold mt-5">
+                    Conversational AI
+                </h3>
+
                 <p class="text-xs text-gray-500 mt-2">
                     NLP & text datasets
                 </p>
+
             </div>
 
 
             <div class="glass rounded-2xl p-7 text-center service-card">
+
                 <i class="fas fa-satellite text-3xl text-pink-400"></i>
-                <h3 class="font-bold mt-5">Geospatial AI</h3>
+
+                <h3 class="font-bold mt-5">
+                    Geospatial AI
+                </h3>
+
                 <p class="text-xs text-gray-500 mt-2">
                     Mapping & satellite data
                 </p>
+
             </div>
 
         </div>
@@ -845,9 +1863,9 @@
 </section>
 
 
-<!-- =========================================================
-     WHY FS AI SOLUTIONS
-========================================================= -->
+<!-- =====================================================
+     WHY FS AI
+====================================================== -->
 
 <section class="py-28">
 
@@ -855,21 +1873,31 @@
 
         <div class="grid lg:grid-cols-2 gap-16 items-center">
 
+
             <div>
 
                 <span class="text-pink-400 text-xs font-bold tracking-[.25em] uppercase">
                     Why FS AI Solutions
                 </span>
 
+
                 <h2 class="text-4xl md:text-5xl font-extrabold mt-4">
+
                     Built around
-                    <span class="gradient-text">quality.</span>
+
+                    <span class="gradient-text">
+                        quality.
+                    </span>
+
                 </h2>
 
+
                 <p class="text-gray-500 mt-6 leading-7">
+
                     AI models are only as good as the data behind them.
-                    Our workflows focus on accuracy, consistency and
-                    scalable human verification.
+                    Our workflows focus on accuracy, consistency,
+                    quality assurance and scalable human verification.
+
                 </p>
 
             </div>
@@ -877,39 +1905,64 @@
 
             <div class="grid sm:grid-cols-2 gap-5">
 
+
                 <div class="glass p-7 rounded-2xl">
+
                     <i class="fas fa-users text-purple-400 text-2xl"></i>
-                    <h3 class="font-bold mt-5">Human-in-the-Loop</h3>
+
+                    <h3 class="font-bold mt-5">
+                        Human-in-the-Loop
+                    </h3>
+
                     <p class="text-gray-500 text-sm mt-2">
                         Human expertise combined with structured workflows.
                     </p>
+
                 </div>
 
 
                 <div class="glass p-7 rounded-2xl">
+
                     <i class="fas fa-expand-arrows-alt text-pink-400 text-2xl"></i>
-                    <h3 class="font-bold mt-5">Scalable Teams</h3>
+
+                    <h3 class="font-bold mt-5">
+                        Scalable Teams
+                    </h3>
+
                     <p class="text-gray-500 text-sm mt-2">
                         Flexible capacity for growing annotation projects.
                     </p>
+
                 </div>
 
 
                 <div class="glass p-7 rounded-2xl">
+
                     <i class="fas fa-check-circle text-purple-400 text-2xl"></i>
-                    <h3 class="font-bold mt-5">Multi-Level QA</h3>
+
+                    <h3 class="font-bold mt-5">
+                        Multi-Level QA
+                    </h3>
+
                     <p class="text-gray-500 text-sm mt-2">
                         Multiple validation layers before dataset delivery.
                     </p>
+
                 </div>
 
 
                 <div class="glass p-7 rounded-2xl">
+
                     <i class="fas fa-cogs text-pink-400 text-2xl"></i>
-                    <h3 class="font-bold mt-5">Flexible Workflow</h3>
+
+                    <h3 class="font-bold mt-5">
+                        Flexible Workflow
+                    </h3>
+
                     <p class="text-gray-500 text-sm mt-2">
-                        Workflows designed around your project requirements.
+                        Workflows designed around project requirements.
                     </p>
+
                 </div>
 
             </div>
@@ -921,9 +1974,9 @@
 </section>
 
 
-<!-- =========================================================
+<!-- =====================================================
      TECHNOLOGY
-========================================================= -->
+====================================================== -->
 
 <section class="py-24 bg-white/[.015] border-y border-white/5">
 
@@ -933,31 +1986,52 @@
             Technology
         </span>
 
+
         <h2 class="text-3xl md:text-4xl font-extrabold mt-4">
+
             Professional annotation
-            <span class="gradient-text">workflows.</span>
+
+            <span class="gradient-text">
+                workflows.
+            </span>
+
         </h2>
 
+
         <p class="text-gray-500 mt-5 max-w-2xl mx-auto">
-            We work with professional annotation environments to
-            organize, label, review and manage AI training datasets.
+
+            We work with professional annotation environments
+            to organize, label, review and manage AI training datasets.
+
         </p>
 
 
         <div class="flex flex-wrap justify-center gap-5 mt-12">
 
+
             <div class="glass rounded-2xl px-8 py-6">
-                <div class="text-2xl font-extrabold">CVAT</div>
+
+                <div class="text-2xl font-extrabold">
+                    CVAT
+                </div>
+
                 <div class="text-xs text-gray-500 mt-1">
                     Computer Vision Annotation Tool
                 </div>
+
             </div>
 
+
             <div class="glass rounded-2xl px-8 py-6">
-                <div class="text-2xl font-extrabold">Supervisely</div>
+
+                <div class="text-2xl font-extrabold">
+                    Supervisely
+                </div>
+
                 <div class="text-xs text-gray-500 mt-1">
                     AI Data Platform
                 </div>
+
             </div>
 
         </div>
@@ -967,65 +2041,122 @@
 </section>
 
 
-<!-- =========================================================
-     CASE STUDY
-========================================================= -->
+<!-- =====================================================
+     CASE STUDY / SEO CONTENT
+====================================================== -->
 
 <section class="py-28">
 
     <div class="max-w-7xl mx-auto px-6">
 
+
         <div class="glass rounded-[2rem] overflow-hidden gradient-border">
 
             <div class="grid lg:grid-cols-2">
 
+
                 <div class="p-10 md:p-14">
 
                     <span class="text-purple-400 text-xs font-bold tracking-[.25em] uppercase">
-                        Featured Capability
+
+                        AI Data Annotation Case Study
+
                     </span>
 
+
                     <h2 class="text-4xl font-extrabold mt-5">
+
                         High-quality annotation
+
                         <span class="gradient-text">
                             at scale.
                         </span>
+
                     </h2>
 
+
                     <p class="text-gray-500 leading-7 mt-6">
-                        From bounding boxes and polygon segmentation
-                        to video tracking and text annotation,
-                        our workflows are designed to create
-                        consistent training data for modern AI systems.
+
+                        FS AI Solutions delivers structured AI training
+                        datasets through professional image annotation,
+                        video annotation, text annotation, segmentation,
+                        object tracking and multi-level quality assurance.
+
                     </p>
+
+
+                    <p class="text-gray-500 leading-7 mt-4">
+
+                        Our annotation workflow is designed for
+                        computer vision, machine learning, NLP,
+                        robotics, autonomous systems, retail,
+                        e-commerce and other AI applications.
+
+                    </p>
+
 
                     <div class="grid grid-cols-2 gap-5 mt-8">
 
-                        <div>
-                            <div class="text-2xl font-bold">Image</div>
-                            <div class="text-xs text-gray-500">Annotation</div>
-                        </div>
 
                         <div>
-                            <div class="text-2xl font-bold">Video</div>
-                            <div class="text-xs text-gray-500">Tracking</div>
+
+                            <div class="text-2xl font-bold">
+                                Image
+                            </div>
+
+                            <div class="text-xs text-gray-500">
+                                Annotation
+                            </div>
+
                         </div>
 
-                        <div>
-                            <div class="text-2xl font-bold">Text</div>
-                            <div class="text-xs text-gray-500">NLP</div>
-                        </div>
 
                         <div>
-                            <div class="text-2xl font-bold">QA</div>
-                            <div class="text-xs text-gray-500">Validation</div>
+
+                            <div class="text-2xl font-bold">
+                                Video
+                            </div>
+
+                            <div class="text-xs text-gray-500">
+                                Tracking
+                            </div>
+
+                        </div>
+
+
+                        <div>
+
+                            <div class="text-2xl font-bold">
+                                Text
+                            </div>
+
+                            <div class="text-xs text-gray-500">
+                                NLP
+                            </div>
+
+                        </div>
+
+
+                        <div>
+
+                            <div class="text-2xl font-bold">
+                                QA
+                            </div>
+
+                            <div class="text-xs text-gray-500">
+                                Validation
+                            </div>
+
                         </div>
 
                     </div>
 
+
                     <a href="#contact"
                        class="inline-flex mt-9 bg-white text-black px-6 py-3 rounded-xl font-bold">
+
                         Start a Conversation
+
                     </a>
 
                 </div>
@@ -1049,41 +2180,79 @@
 
                             </div>
 
+
                             <div class="space-y-5">
 
+
                                 <div>
+
                                     <div class="flex justify-between text-xs mb-2">
-                                        <span>Annotation Accuracy</span>
-                                        <span>99%+</span>
+
+                                        <span>
+                                            Annotation Accuracy
+                                        </span>
+
+                                        <span>
+                                            99%+
+                                        </span>
+
                                     </div>
 
+
                                     <div class="h-2 bg-white/5 rounded-full">
+
                                         <div class="h-full w-[96%] bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></div>
+
                                     </div>
+
                                 </div>
 
 
                                 <div>
+
                                     <div class="flex justify-between text-xs mb-2">
-                                        <span>QA Validation</span>
-                                        <span>Verified</span>
+
+                                        <span>
+                                            QA Validation
+                                        </span>
+
+                                        <span>
+                                            Verified
+                                        </span>
+
                                     </div>
 
+
                                     <div class="h-2 bg-white/5 rounded-full">
+
                                         <div class="h-full w-[92%] bg-gradient-to-r from-pink-500 to-orange-400 rounded-full"></div>
+
                                     </div>
+
                                 </div>
 
 
                                 <div>
+
                                     <div class="flex justify-between text-xs mb-2">
-                                        <span>Dataset Readiness</span>
-                                        <span>Ready</span>
+
+                                        <span>
+                                            Dataset Readiness
+                                        </span>
+
+                                        <span>
+                                            Ready
+                                        </span>
+
                                     </div>
 
+
                                     <div class="h-2 bg-white/5 rounded-full">
+
                                         <div class="h-full w-[98%] bg-gradient-to-r from-purple-500 to-blue-500 rounded-full"></div>
+
                                     </div>
+
                                 </div>
 
                             </div>
@@ -1103,11 +2272,12 @@
 </section>
 
 
-<!-- =========================================================
+<!-- =====================================================
      FOUNDER
-========================================================= -->
+====================================================== -->
 
-<section id="about" class="py-28 bg-white/[.015] border-y border-white/5">
+<section id="about"
+         class="py-28 bg-white/[.015] border-y border-white/5">
 
     <div class="max-w-5xl mx-auto px-6">
 
@@ -1115,41 +2285,63 @@
 
             <div class="flex flex-col md:flex-row items-center gap-10">
 
+
                 <img
                     src="https://github.com/nazmulhoqueshoab2938-glitch/fs-ai-solutionsfs-ai-solutions-company/blob/main/ChatGPT%20Image%20Aug%2023,%202026,%2002_17_57%20PM.png?raw=true"
-                    alt="Nazmul Hoque Shoab"
-                    class="w-40 h-40 md:w-48 md:h-48 object-cover rounded-full border-2 border-purple-500/40">
+                    alt="Nazmul Hoque Shoab - Founder of FS AI Solutions"
+                    class="w-40 h-40 md:w-48 md:h-48 object-cover rounded-full border-2 border-purple-500/40"
+                    loading="lazy">
+
 
                 <div class="text-center md:text-left">
 
+
                     <span class="text-purple-400 text-xs font-bold tracking-[.2em] uppercase">
+
                         Founder & Owner
+
                     </span>
 
+
                     <h2 class="text-3xl font-extrabold mt-2">
+
                         Nazmul Hoque Shoab
+
                     </h2>
 
+
                     <p class="text-gray-500 leading-7 mt-4">
+
                         Building FS AI Solutions with a focus on
                         high-quality AI training data, professional
                         annotation workflows and scalable human
                         intelligence for machine learning.
+
                     </p>
+
 
                     <div class="flex flex-wrap justify-center md:justify-start gap-3 mt-6">
 
+
                         <a href="https://www.linkedin.com/in/nazmul-hoque-shoab-473a23228/"
                            target="_blank"
+                           rel="noopener noreferrer"
                            class="glass px-4 py-2 rounded-lg text-sm hover:text-blue-400">
+
                             <i class="fab fa-linkedin mr-2"></i>
+
                             LinkedIn
+
                         </a>
+
 
                         <a href="mailto:nazmulhoqueshoab2938@gmail.com"
                            class="glass px-4 py-2 rounded-lg text-sm hover:text-red-400">
+
                             <i class="fas fa-envelope mr-2"></i>
+
                             Email
+
                         </a>
 
                     </div>
@@ -1165,23 +2357,32 @@
 </section>
 
 
-<!-- =========================================================
+<!-- =====================================================
      FAQ
-========================================================= -->
+====================================================== -->
 
 <section id="faq" class="py-28">
 
     <div class="max-w-4xl mx-auto px-6">
 
+
         <div class="text-center mb-14">
 
             <span class="text-pink-400 text-xs font-bold tracking-[.25em] uppercase">
+
                 FAQ
+
             </span>
 
+
             <h2 class="text-4xl font-extrabold mt-4">
+
                 Frequently Asked
-                <span class="gradient-text">Questions</span>
+
+                <span class="gradient-text">
+                    Questions
+                </span>
+
             </h2>
 
         </div>
@@ -1189,21 +2390,24 @@
 
         <div class="space-y-4">
 
+
             <div class="glass rounded-2xl overflow-hidden">
 
-                <button onclick="toggleFAQ(this)"
+                <button
+                    onclick="toggleFAQ(this)"
                     class="w-full p-6 flex justify-between items-center text-left font-semibold">
 
                     Can you provide a sample before starting?
 
-                    <i class="fas fa-chevron-down text-purple-400"></i>
+                    <i class="fas fa-chevron-down text-purple-400 transition"></i>
 
                 </button>
+
 
                 <div class="faq-answer hidden px-6 pb-6 text-sm text-gray-500 leading-6">
 
                     Yes. We can discuss a pilot or sample annotation
-                    before moving into a larger project.
+                    before moving into a larger AI data annotation project.
 
                 </div>
 
@@ -1212,20 +2416,22 @@
 
             <div class="glass rounded-2xl overflow-hidden">
 
-                <button onclick="toggleFAQ(this)"
+                <button
+                    onclick="toggleFAQ(this)"
                     class="w-full p-6 flex justify-between items-center text-left font-semibold">
 
                     What type of data can you annotate?
 
-                    <i class="fas fa-chevron-down text-purple-400"></i>
+                    <i class="fas fa-chevron-down text-purple-400 transition"></i>
 
                 </button>
+
 
                 <div class="faq-answer hidden px-6 pb-6 text-sm text-gray-500 leading-6">
 
                     We support images, videos and text datasets,
                     including bounding boxes, polygons, segmentation,
-                    tracking, classification and NLP annotation.
+                    object tracking, classification and NLP annotation.
 
                 </div>
 
@@ -1234,19 +2440,21 @@
 
             <div class="glass rounded-2xl overflow-hidden">
 
-                <button onclick="toggleFAQ(this)"
+                <button
+                    onclick="toggleFAQ(this)"
                     class="w-full p-6 flex justify-between items-center text-left font-semibold">
 
                     Which annotation platforms do you use?
 
-                    <i class="fas fa-chevron-down text-purple-400"></i>
+                    <i class="fas fa-chevron-down text-purple-400 transition"></i>
 
                 </button>
 
+
                 <div class="faq-answer hidden px-6 pb-6 text-sm text-gray-500 leading-6">
 
-                    Our current workflows include CVAT and Supervisely,
-                    depending on project requirements.
+                    Our current professional workflows include
+                    CVAT and Supervisely depending on project requirements.
 
                 </div>
 
@@ -1255,18 +2463,43 @@
 
             <div class="glass rounded-2xl overflow-hidden">
 
-                <button onclick="toggleFAQ(this)"
+                <button
+                    onclick="toggleFAQ(this)"
+                    class="w-full p-6 flex justify-between items-center text-left font-semibold">
+
+                    Does FS AI Solutions provide services in Bangladesh?
+
+                    <i class="fas fa-chevron-down text-purple-400 transition"></i>
+
+                </button>
+
+
+                <div class="faq-answer hidden px-6 pb-6 text-sm text-gray-500 leading-6">
+
+                    Yes. FS AI Solutions is based in Bangladesh
+                    and works with local and international AI projects.
+
+                </div>
+
+            </div>
+
+
+            <div class="glass rounded-2xl overflow-hidden">
+
+                <button
+                    onclick="toggleFAQ(this)"
                     class="w-full p-6 flex justify-between items-center text-left font-semibold">
 
                     How is pricing calculated?
 
-                    <i class="fas fa-chevron-down text-purple-400"></i>
+                    <i class="fas fa-chevron-down text-purple-400 transition"></i>
 
                 </button>
 
+
                 <div class="faq-answer hidden px-6 pb-6 text-sm text-gray-500 leading-6">
 
-                    Pricing depends on data volume, annotation type,
+                    Pricing depends on dataset volume, annotation type,
                     complexity, QA requirements and project timeline.
                     Contact us for a custom quote.
 
@@ -1281,54 +2514,87 @@
 </section>
 
 
-<!-- =========================================================
-     FINAL CTA
-========================================================= -->
+<!-- =====================================================
+     FINAL CTA / CONTACT
+====================================================== -->
 
 <section id="contact" class="py-28">
 
     <div class="max-w-6xl mx-auto px-6">
 
+
         <div class="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-purple-900/60 via-purple-950/40 to-pink-900/50 border border-purple-500/20 p-10 md:p-16 text-center">
+
 
             <div class="absolute w-64 h-64 bg-purple-500 rounded-full blur-[100px] opacity-20 -top-20 -left-20"></div>
 
+
             <div class="relative">
 
+
                 <span class="text-purple-200 text-xs font-bold tracking-[.25em] uppercase">
+
                     Start Your AI Project
+
                 </span>
 
+
                 <h2 class="text-4xl md:text-6xl font-extrabold mt-5">
+
                     Build Better AI
+
                     <br>
-                    <span class="text-white/80">With Better Data.</span>
+
+                    <span class="text-white/80">
+                        With Better Data.
+                    </span>
+
                 </h2>
 
+
                 <p class="text-purple-100/60 max-w-2xl mx-auto mt-6">
+
                     Tell us about your dataset, annotation requirements
                     and project goals. Let's build a workflow that works
                     for your AI model.
+
                 </p>
+
 
                 <div class="flex flex-wrap justify-center gap-4 mt-9">
 
+
                     <a href="https://wa.me/8801521567789"
                        target="_blank"
+                       rel="noopener noreferrer"
                        class="bg-green-500 hover:bg-green-400 text-black px-7 py-4 rounded-xl font-bold transition">
 
                         <i class="fab fa-whatsapp mr-2"></i>
+
                         WhatsApp Us
 
                     </a>
+
 
                     <a href="mailto:nazmulhoqueshoab2938@gmail.com"
                        class="bg-white text-black hover:bg-gray-200 px-7 py-4 rounded-xl font-bold transition">
 
                         <i class="fas fa-envelope mr-2"></i>
+
                         Email Us
 
                     </a>
+
+                </div>
+
+
+                <div class="mt-7 text-sm text-purple-100/60">
+
+                    📞 +880 1521-567789
+
+                    <br>
+
+                    📧 nazmulhoqueshoab2938@gmail.com
 
                 </div>
 
@@ -1341,35 +2607,50 @@
 </section>
 
 
-<!-- =========================================================
+<!-- =====================================================
      FOOTER
-========================================================= -->
+====================================================== -->
 
 <footer class="border-t border-white/5 py-12">
 
     <div class="max-w-7xl mx-auto px-6">
 
+
         <div class="grid md:grid-cols-4 gap-10">
+
 
             <div class="md:col-span-2">
 
+
                 <div class="flex items-center gap-3">
+
 
                     <img
                         src="https://github.com/nazmulhoqueshoab2938-glitch/fs-ai-solutionsfs-ai-solutions-company/blob/main/Gemini_Generated_Image_sor4hlsor4hlsor4.jpg?raw=true"
                         class="w-10 h-10 rounded-xl"
-                        alt="FS AI Solutions">
+                        alt="FS AI Solutions"
+                        loading="lazy">
+
 
                     <div class="font-extrabold">
-                        FS AI <span class="gradient-text">SOLUTIONS</span>
+
+                        FS AI
+
+                        <span class="gradient-text">
+                            SOLUTIONS
+                        </span>
+
                     </div>
 
                 </div>
 
+
                 <p class="text-gray-600 text-sm leading-6 mt-5 max-w-md">
+
                     Human-powered AI data annotation and training
                     data solutions for the next generation of
                     artificial intelligence.
+
                 </p>
 
             </div>
@@ -1381,12 +2662,28 @@
                     Company
                 </h4>
 
+
                 <div class="space-y-3 text-sm text-gray-500">
 
-                    <a href="#about" class="block hover:text-white">About</a>
-                    <a href="#services" class="block hover:text-white">Services</a>
-                    <a href="#workflow" class="block hover:text-white">Process</a>
-                    <a href="#contact" class="block hover:text-white">Contact</a>
+                    <a href="#about"
+                       class="block hover:text-white">
+                        About
+                    </a>
+
+                    <a href="#services"
+                       class="block hover:text-white">
+                        Services
+                    </a>
+
+                    <a href="#workflow"
+                       class="block hover:text-white">
+                        Process
+                    </a>
+
+                    <a href="#contact"
+                       class="block hover:text-white">
+                        Contact
+                    </a>
 
                 </div>
 
@@ -1399,12 +2696,32 @@
                     Services
                 </h4>
 
+
                 <div class="space-y-3 text-sm text-gray-500">
 
-                    <div>Image Annotation</div>
-                    <div>Video Annotation</div>
-                    <div>Text Annotation</div>
-                    <div>Quality Assurance</div>
+                    <div>
+                        Image Annotation
+                    </div>
+
+                    <div>
+                        Video Annotation
+                    </div>
+
+                    <div>
+                        Text Annotation
+                    </div>
+
+                    <div>
+                        Segmentation
+                    </div>
+
+                    <div>
+                        Object Tracking
+                    </div>
+
+                    <div>
+                        Quality Assurance
+                    </div>
 
                 </div>
 
@@ -1415,12 +2732,20 @@
 
         <div class="border-t border-white/5 mt-10 pt-7 flex flex-col md:flex-row justify-between gap-4 text-xs text-gray-600">
 
-            <div>
-                © 2026 FS AI Solutions. All rights reserved.
-            </div>
 
             <div>
-                Founded by Nazmul Hoque Shoab
+
+                © 2026 FS AI Solutions.
+                All rights reserved.
+
+            </div>
+
+
+            <div>
+
+                Founded by
+                Nazmul Hoque Shoab
+
             </div>
 
         </div>
@@ -1430,38 +2755,45 @@
 </footer>
 
 
-<!-- =========================================================
+<!-- =====================================================
      AI CHAT BUTTON
-========================================================= -->
+====================================================== -->
 
 <button
     id="chatToggle"
     onclick="toggleChat()"
+    aria-label="Open FS AI Assistant"
     class="fixed bottom-6 right-6 z-[100] w-16 h-16 rounded-full bg-gradient-to-br from-purple-600 to-pink-600 shadow-2xl shadow-purple-900/30 flex items-center justify-center hover:scale-110 transition">
 
-    <i id="chatIcon" class="fas fa-comments text-xl"></i>
+    <i id="chatIcon"
+       class="fas fa-comments text-xl"></i>
 
 </button>
 
 
-<!-- =========================================================
+<!-- =====================================================
      AI CHAT WINDOW
-========================================================= -->
+====================================================== -->
 
 <div
     id="chatBox"
     class="hidden fixed bottom-28 right-6 z-[100] w-[calc(100%-3rem)] max-w-sm glass rounded-3xl overflow-hidden shadow-2xl">
 
+
     <div class="bg-gradient-to-r from-purple-700 to-pink-600 p-5">
+
 
         <div class="flex items-center justify-between">
 
+
             <div class="flex items-center gap-3">
+
 
                 <img
                     src="https://github.com/nazmulhoqueshoab2938-glitch/fs-ai-solutionsfs-ai-solutions-company/blob/main/Gemini_Generated_Image_sor4hlsor4hlsor4.jpg?raw=true"
                     class="w-10 h-10 rounded-xl"
                     alt="FS AI Assistant">
+
 
                 <div>
 
@@ -1477,8 +2809,13 @@
 
             </div>
 
-            <button onclick="toggleChat()">
+
+            <button
+                onclick="toggleChat()"
+                aria-label="Close chat">
+
                 <i class="fas fa-times"></i>
+
             </button>
 
         </div>
@@ -1489,10 +2826,17 @@
     <div id="chatBody"
          class="h-72 overflow-y-auto p-4 space-y-3 text-xs">
 
+
         <div class="bg-white/5 rounded-2xl p-4 text-gray-300">
-            👋 Welcome to <b>FS AI Solutions</b>!
+
+            👋 Welcome to
+            <b>FS AI Solutions</b>!
+
             <br><br>
-            How can we help with your AI Data Annotation project?
+
+            How can we help with your
+            AI Data Annotation project?
+
         </div>
 
     </div>
@@ -1500,24 +2844,34 @@
 
     <div class="p-3 border-t border-white/5">
 
+
         <div class="flex gap-2 overflow-x-auto mb-3">
+
 
             <button
                 onclick="quickMessage('What services do you provide?')"
                 class="whitespace-nowrap text-[10px] glass px-3 py-2 rounded-full">
+
                 Services
+
             </button>
+
 
             <button
                 onclick="quickMessage('How much does annotation cost?')"
                 class="whitespace-nowrap text-[10px] glass px-3 py-2 rounded-full">
+
                 Pricing
+
             </button>
+
 
             <button
                 onclick="quickMessage('How can I contact you?')"
                 class="whitespace-nowrap text-[10px] glass px-3 py-2 rounded-full">
+
                 Contact
+
             </button>
 
         </div>
@@ -1525,16 +2879,22 @@
 
         <div class="flex gap-2">
 
+
             <input
                 id="chatInput"
                 type="text"
                 placeholder="Ask something..."
+                aria-label="Chat message"
                 class="flex-1 bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-xs outline-none focus:border-purple-500">
+
 
             <button
                 onclick="sendChat()"
+                aria-label="Send message"
                 class="w-11 rounded-xl bg-purple-600 hover:bg-purple-500">
+
                 <i class="fas fa-paper-plane"></i>
+
             </button>
 
         </div>
@@ -1544,53 +2904,94 @@
 </div>
 
 
-<!-- =========================================================
+<!-- =====================================================
      JAVASCRIPT
-========================================================= -->
+====================================================== -->
 
 <script>
 
+
+/* =====================================================
+   MOBILE MENU
+===================================================== */
+
 function toggleMobileMenu() {
 
-    const menu = document.getElementById('mobileMenu');
+    const menu =
+        document.getElementById('mobileMenu');
 
     menu.classList.toggle('hidden');
 
 }
 
 
+function closeMobileMenu() {
+
+    const menu =
+        document.getElementById('mobileMenu');
+
+    menu.classList.add('hidden');
+
+}
+
+
+/* =====================================================
+   FAQ
+===================================================== */
+
 function toggleFAQ(button) {
 
-    const answer = button.nextElementSibling;
+    const answer =
+        button.nextElementSibling;
 
     answer.classList.toggle('hidden');
 
-    const icon = button.querySelector('i');
+    const icon =
+        button.querySelector('i');
 
-    if(answer.classList.contains('hidden')) {
-        icon.style.transform = 'rotate(0deg)';
+    if (
+        answer.classList.contains('hidden')
+    ) {
+
+        icon.style.transform =
+            'rotate(0deg)';
+
     } else {
-        icon.style.transform = 'rotate(180deg)';
+
+        icon.style.transform =
+            'rotate(180deg)';
+
     }
 
 }
 
 
+/* =====================================================
+   CHAT
+===================================================== */
+
 function toggleChat() {
 
-    const box = document.getElementById('chatBox');
+    const box =
+        document.getElementById('chatBox');
 
-    const icon = document.getElementById('chatIcon');
+    const icon =
+        document.getElementById('chatIcon');
 
     box.classList.toggle('hidden');
 
-    if(box.classList.contains('hidden')) {
 
-        icon.className = 'fas fa-comments text-xl';
+    if (
+        box.classList.contains('hidden')
+    ) {
+
+        icon.className =
+            'fas fa-comments text-xl';
 
     } else {
 
-        icon.className = 'fas fa-times text-xl';
+        icon.className =
+            'fas fa-times text-xl';
 
     }
 
@@ -1599,7 +3000,9 @@ function toggleChat() {
 
 function quickMessage(message) {
 
-    document.getElementById('chatInput').value = message;
+    document.getElementById(
+        'chatInput'
+    ).value = message;
 
     sendChat();
 
@@ -1608,150 +3011,293 @@ function quickMessage(message) {
 
 function sendChat() {
 
-    const input = document.getElementById('chatInput');
+    const input =
+        document.getElementById('chatInput');
 
-    const text = input.value.trim();
+    const text =
+        input.value.trim();
 
-    if(!text) return;
+    if (!text) return;
 
-    const body = document.getElementById('chatBody');
+
+    const body =
+        document.getElementById('chatBody');
+
 
     body.innerHTML += `
+
         <div class="flex justify-end">
+
             <div class="bg-purple-600 rounded-2xl rounded-tr-none px-4 py-3 max-w-[80%]">
+
                 ${escapeHTML(text)}
+
             </div>
+
         </div>
+
     `;
+
 
     input.value = '';
 
-    body.scrollTop = body.scrollHeight;
+    body.scrollTop =
+        body.scrollHeight;
 
 
     setTimeout(() => {
 
-        const reply = getReply(text);
+
+        const reply =
+            getReply(text);
+
 
         body.innerHTML += `
+
             <div class="bg-white/5 rounded-2xl rounded-tl-none px-4 py-3 max-w-[85%] text-gray-300">
+
                 ${reply}
+
             </div>
+
         `;
 
-        body.scrollTop = body.scrollHeight;
+
+        body.scrollTop =
+            body.scrollHeight;
+
 
     }, 700);
 
 }
 
 
+/* =====================================================
+   CHAT RESPONSES
+===================================================== */
+
 function getReply(text) {
 
-    const q = text.toLowerCase();
+    const q =
+        text.toLowerCase();
 
-    if(q.includes('service') || q.includes('offer')) {
+
+    if (
+        q.includes('service') ||
+        q.includes('offer') ||
+        q.includes('annotation')
+    ) {
 
         return `
-            We provide:
-            <br>• Image Annotation
-            <br>• Video Annotation
-            <br>• Text Annotation
-            <br>• Segmentation
-            <br>• Object Tracking
-            <br>• Quality Assurance
+
+            <b>FS AI Solutions provides:</b>
+
+            <br><br>
+
+            • Image Annotation
+            <br>
+            • Video Annotation
+            <br>
+            • Text Annotation
+            <br>
+            • Bounding Box Annotation
+            <br>
+            • Polygon Annotation
+            <br>
+            • Semantic Segmentation
+            <br>
+            • Object Tracking
+            <br>
+            • NLP Annotation
+            <br>
+            • Quality Assurance
+
         `;
 
     }
 
 
-    if(q.includes('price') || q.includes('cost')) {
+    if (
+        q.includes('price') ||
+        q.includes('cost') ||
+        q.includes('pricing')
+    ) {
 
         return `
+
             Pricing depends on dataset volume,
             annotation complexity and QA requirements.
+
             <br><br>
-            <a href="https://wa.me/8801521567789"
-               target="_blank"
-               class="text-green-400 underline">
-               Contact us on WhatsApp for a custom quote.
+
+            <a
+                href="https://wa.me/8801521567789"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-green-400 underline">
+
+                Contact us on WhatsApp
+                for a custom quote.
+
             </a>
+
         `;
 
     }
 
 
-    if(q.includes('contact') || q.includes('phone')) {
+    if (
+        q.includes('contact') ||
+        q.includes('phone') ||
+        q.includes('whatsapp') ||
+        q.includes('email')
+    ) {
 
         return `
+
             <b>FS AI Solutions</b>
+
             <br><br>
-            📞 01521567789
+
+            📞 +880 1521-567789
+
             <br>
+
             📧 nazmulhoqueshoab2938@gmail.com
+
             <br><br>
-            <a href="https://wa.me/8801521567789"
-               target="_blank"
-               class="text-green-400 underline">
-               WhatsApp
+
+            <a
+                href="https://wa.me/8801521567789"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-green-400 underline">
+
+                WhatsApp
+
             </a>
+
         `;
 
     }
 
 
-    if(q.includes('cvat') || q.includes('supervisely')) {
+    if (
+        q.includes('cvat') ||
+        q.includes('supervisely')
+    ) {
 
         return `
-            We currently support professional workflows
-            using <b>CVAT</b> and <b>Supervisely</b>.
+
+            We currently support professional
+            annotation workflows using
+            <b>CVAT</b> and <b>Supervisely</b>,
+            depending on project requirements.
+
+        `;
+
+    }
+
+
+    if (
+        q.includes('bangladesh') ||
+        q.includes('location')
+    ) {
+
+        return `
+
+            FS AI Solutions is based in
+            <b>Bangladesh</b> and provides
+            AI data annotation services for
+            local and international clients.
+
         `;
 
     }
 
 
     return `
-        Thanks for contacting FS AI Solutions!
+
+        Thanks for contacting
+        <b>FS AI Solutions</b>!
+
         <br><br>
+
         For project-specific information,
-        please contact us through WhatsApp or Email.
+        please contact us through
+        WhatsApp or Email.
+
+        <br><br>
+
+        <a
+            href="https://wa.me/8801521567789"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-green-400 underline">
+
+            Contact FS AI Solutions
+
+        </a>
+
     `;
 
 }
 
 
+/* =====================================================
+   SECURITY
+===================================================== */
+
 function escapeHTML(text) {
 
-    return text.replace(/[&<>'"]/g, function(tag) {
+    return text.replace(
+        /[&<>'"]/g,
+        function(tag) {
 
-        const chars = {
-            '&': '&amp;',
-            '<': '&lt;',
-            '>': '&gt;',
-            "'": '&#39;',
-            '"': '&quot;'
-        };
+            const chars = {
 
-        return chars[tag];
+                '&': '&amp;',
 
-    });
+                '<': '&lt;',
+
+                '>': '&gt;',
+
+                "'": '&#39;',
+
+                '"': '&quot;'
+
+            };
+
+            return chars[tag];
+
+        }
+    );
 
 }
 
 
-document.getElementById('chatInput').addEventListener('keypress', function(e) {
+/* =====================================================
+   ENTER KEY CHAT
+===================================================== */
 
-    if(e.key === 'Enter') {
+document
+    .getElementById('chatInput')
+    .addEventListener(
+        'keypress',
+        function(e) {
 
-        sendChat();
+            if (e.key === 'Enter') {
 
-    }
+                sendChat();
 
-});
+            }
+
+        }
+    );
+
 
 </script>
 
 
 </body>
 </html>
-```
